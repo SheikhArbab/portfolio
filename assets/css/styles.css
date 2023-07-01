@@ -595,12 +595,6 @@ body {
 
 
 
-
-
-
-
-
-
 .menuIn {
     -webkit-animation-name: menuIn;
     animation-name: menuIn;
@@ -1452,7 +1446,7 @@ span {
     overflow: hidden;
     border-radius: 12px;
     width: 300px !important;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
     margin: 1em;
     box-shadow: inset 0px 0px 20px 0 black;
     position: relative;

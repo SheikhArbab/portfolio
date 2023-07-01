@@ -20,8 +20,8 @@ list.forEach((item) =>
 
 var typed = new Typed(".auto-type", {
   strings: ["Arbab Zafar", "Web Developer", "Graphic Designer", "Intermediate Student", "Freelancer"],
-  typeSpeed: 130,
-  backSpeed: 40,
+  typeSpeed: 40,
+  backSpeed: 4,
   loop: true
 });
 
@@ -122,7 +122,7 @@ window.addEventListener("scroll", function () {
           if (count < target) {
             count++;
             progText[j].innerText = count + "%";
-            setTimeout(updateCount, 20); // Decrease the delay to speed up the animation
+            setTimeout(updateCount, 1); // Decrease the delay to speed up the animation
 
           } else {
             progText[j].innerText = target + "%";
