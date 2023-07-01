@@ -45,7 +45,6 @@
     <link rel=icon href=./assets/imgs/favicon_io/android-chrome-192x192.png type=image/x-icon sizes=192x192>
     <link rel=icon href=./assets/imgs/favicon_io/android-chrome-512x512.png type=image/x-icon sizes=512x512>
     <link rel=icon href=./assets/imgs/favicon_io/apple-touch-icon.png type=image/x-icon>
-    <link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet>
     <link rel=stylesheet href=./assets/css/styles.css>
 </head>
 
@@ -69,9 +68,11 @@
             </div>
         </div>
         <header id=header class=header>
+            
             <a href=./index.html class="logo audioBtn">
                 <img src=./assets/imgs/logo/arbab.png class=audioBtn alt="">
             </a>
+       
             <nav class="navbar sm-hide">
                 <ul>
                     <li class="list active">
@@ -166,7 +167,10 @@
                     </nav>
                 </div>
             </div>
+
+            
         </header>
+        <div id="particles-js"></div>
         <main>
             <section id=home class=home>
                 <div class="blur"></div>
@@ -202,7 +206,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="filter"></div>
                 <figure class=space>
                     <div class="blob"></div>
                     <svg class=gridItem__media version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg x=0px y=0px
@@ -1681,12 +1684,12 @@
                 </audio>
             </section>
             <section class=about id=about>
-                <h2 data-aos=fade-down class=heading>About <span>Me</span></h2>
-                <div data-aos=fade-down class=about-img>
+                <h2 class=heading>About <span>Me</span></h2>
+                <div class=about-img>
                     <img src="./assets/imgs/arbab-profile.png" alt="">
                     <span class=circle-spin></span>
                 </div>
-                <div data-aos=fade-down class=about-content>
+                <div  class=about-content>
                     <h3>Arbab Zafar</h3>
                     <p> Arbab Zafar, a talented and passionate front-end web developer and graphics designer with a
                         flair for creating captivating online experiences. With a keen eye for aesthetics and an
@@ -1718,7 +1721,7 @@
                 </div>
             </section>
             <section class=skills id=skills>
-                <h2 data-aos=fade-down class=heading>
+                <h2 class=heading>
                     My <span>Skills</span>
                 </h2>
                 <div class=pg-container>
@@ -1765,7 +1768,7 @@
                 </div>
             </section>
             <section class=project id=project>
-                <h2 data-aos=fade-down class=heading>
+                <h2 class=heading>
                     My <span>Projects</span>
                 </h2>
                 <div class="filter-button-w button-group">
@@ -2019,8 +2022,8 @@
             </ul>
         </footer>
     </div>
+    <script src="./assets/js/particles.js"></script>
     <script src="./assets/js/typed.js"></script>
-    <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
     <script src=./assets/js/index.js></script>
 </body>
 

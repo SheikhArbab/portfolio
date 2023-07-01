@@ -81,17 +81,6 @@ dropdownToggle.addEventListener('click', function () {
 
 
 
-
-
-window.addEventListener("scroll", function () {
-  var navbar = document.querySelector(".header");
-  if (window.pageYOffset > 4) {
-    navbar.classList.add("fixed");
-  } else {
-    navbar.classList.remove("fixed");
-  }
-});
-
 var audioButtons = Array.from(document.getElementsByClassName("audioBtn"));
 audioButtons.forEach(function (button) {
   button.addEventListener("click", playClickSound);
@@ -162,24 +151,6 @@ filterButtons.forEach(button => {
     button.classList.add('active');
   });
 });
-
-
-
-
-
-
-AOS.init({
-  once: true,
-
-});
-
-
-
-
-
-
-
-
 
 
 
