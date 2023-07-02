@@ -45,6 +45,7 @@ body {
     justify-content: center;
     z-index: 11111111111;
     position: fixed;
+    box-shadow:inset 0 0 200px 0 black;
 }
 
 .pyramid-loader {
@@ -581,7 +582,7 @@ body {
     width: 100%;
     height: fit-content;
     padding: 3rem 4%;
-    z-index: 111111111;
+    z-index: 11111111111;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -783,6 +784,7 @@ body {
     transform: translate(-50%, -50%);
     top: 60%;
     left: 50%;
+    z-index: 11111111;
   }
   
 
@@ -913,6 +915,7 @@ section {
     position: relative;
     width: 34.5rem;
     height: 5rem;
+    z-index: 1111111111;
 }
 
 .btn-box .btn {
@@ -1012,6 +1015,7 @@ section {
     display: flex;
     margin-right: 14px;
     position: relative;
+    z-index: 1111111111;
 }
 
 .home-icons a>img {
@@ -1445,7 +1449,7 @@ span {
     height: 100%;
 }
 .work{
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
     width: 40rem;
@@ -1498,7 +1502,8 @@ transform: translateY(-10px);
 
 .layer h3{
     font-weight: 500;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
 .layer {
    line-height: 2em;
@@ -2055,45 +2060,6 @@ footer>ul>li>p:hover span {
 
 /* -------------------scroll_btn----------------- */
 
-
-
-
-
-/**
-   * CUSTOM CURSOR
-   */
-
-.cursor {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(50deg, var(--main_color), #b721d1);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 600000;
-    transition: all .5 ease;
-    transition-property: opacity, transform;
-    box-shadow: inset 0 0 10px 0 black, 0 0 10px 0 black;
-}
-
-body:hover .cursor {
-    opacity: 0.5;
-}
-
-body .cursor.hovered {
-    transform: translate(-50%, -50%) scale(1.3);
-    opacity: 0.75;
-}
-
-
-/**
-     * CUSTOM CURSOR
-     */
 
 
 

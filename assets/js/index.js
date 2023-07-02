@@ -20,8 +20,8 @@ list.forEach((item) =>
 
 var typed = new Typed(".auto-type", {
   strings: ["Arbab Zafar", "Web Developer", "Graphic Designer", "Intermediate Student", "Freelancer"],
-  typeSpeed: 40,
-  backSpeed: 4,
+  typeSpeed: 20,
+  backSpeed: 2,
   loop: true
 });
 
@@ -155,42 +155,6 @@ filterButtons.forEach(button => {
 
 
 
-/**
- * Custom cursor
- */
-const cursor = document.querySelector("[data-cursor]");
-const hoverElements = [...document.querySelectorAll("a"), ...document.querySelectorAll("button")];
-
-const cursorMove = function (event) {
-  if (!isMobileDevice()) {
-    cursor.style.top = `${event.clientY}px`;
-    cursor.style.left = `${event.clientX}px`;
-  }
-};
-
-const isMobileDevice = function () {
-  return /Mobi|Android/i.test(navigator.userAgent);
-};
-
-window.addEventListener("mousemove", cursorMove);
-
-const addEventOnElements = function (elements, event, callback) {
-  elements.forEach(function (element) {
-    element.addEventListener(event, callback);
-  });
-};
-
-addEventOnElements(hoverElements, "mouseover", function () {
-  if (!isMobileDevice()) {
-    cursor.classList.add("hovered");
-  }
-});
-
-addEventOnElements(hoverElements, "mouseout", function () {
-  if (!isMobileDevice()) {
-    cursor.classList.remove("hovered");
-  }
-});
 
 
 function myFunction() {
