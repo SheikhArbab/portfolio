@@ -1432,161 +1432,92 @@ span {
     align-items: center;
     flex-direction: column;
     background-color: var(--secon_bg);
-}
-
-
-.swiper-slide {
     overflow: hidden;
-    border-radius: 12px;
-    width: 300px !important;
-    transition: all .2s ease-in-out;
-    margin: 1em;
-    box-shadow: inset 0px 0px 20px 0 black;
-    position: relative;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
-
-.swiper-slide:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 20px 0 black, inset 0px 0px 20px 0 black;
-}
-
-.swiper-slide h1,
-p {
-    padding: 0 12px;
-}
-
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 98vw;
-}
-
-.slider-img {
-    background-color: var(--main_color);
+.work-list{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
     width: 100%;
-    height: 200px;
-    display: block;
-    overflow: hidden;
-}
-
-.slider-img img {
     height: 100%;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 40rem;
+    height: 30rem;
+    margin: 1em;
+}
+.work:hover{
+box-shadow: 0 0 10px 0 black;
+}
+.work img{
+    border-radius: 10px;
     width: 100%;
-    object-fit: cover;
-    object-position: top right;
-    transition: all .4s ease-in-out;
-}
-
-.swiper-slide:hover .slider-img img {
-    transform: scale(1.2);
-
-}
-
-
-
-.swiper-slide::after {
-    z-index: 1111111;
-    content: '';
+    height: 100%;
+    object-fit:cover ;
+    object-position: center center;
     display: block;
-    background: var(--secon_bg) url(../imgs/icons/link.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -80%);
-    transition: 0.3s;
-    opacity: 0;
-    cursor: pointer;
-    box-shadow: inset 0 0 10px 0 black, 0 0 10px 0 black;
+    transition: all .5s ease;
 }
 
-.swiper-slide::before {
-    transition: 0.3s;
-    display: block;
-    z-index: 1;
-    content: '';
-    background: rgba(92, 92, 92, 0.383);
+.work:hover .layer{
+    height: 100%;
+   
+}
+.work:hover img{
+  scale: 1.2;
+   
+}
+.layer{
     width: 100%;
     height: 0%;
-    bottom: 0;
-    box-shadow: inset 0 0 10px 0 black;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), var(--main_color));
+    border-radius: 10px;
     position: absolute;
-    filter: blur(10px);
+    left: 0%;
+    bottom: 0%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    padding: 0 40px;
+    flex-direction: column;
+    text-align: center;
+    transition: all .5s ease;
+    font-size: 14px;
+    box-shadow: inset 0 0 10px 0 black;
 }
 
-.swiper-slide:hover::before {
-    height: 100%;
-
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px
+}
+.layer {
+   line-height: 2em;
 }
 
-.swiper-slide:hover::after {
-    opacity: 1;
-
+.layer a {
+margin-top: 20px;
+font-size: 18px;
+line-height: 60px;
+background-color: white;
+box-shadow: inset 0 0 10px 0 black;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-
-
-.slider-img img {
-    object-fit: cover;
-    object-position: top left;
-    width: 100%;
-    height: 100%;
-    display: block;
+.layer a img{
+    width: 40%;
+    height: 40%;
 }
-
-.swiper-slide {
-    color: var(--main_color);
-    text-transform: capitalize;
-}
-
-.swiper-slide h1 {
-    margin: 2rem 0;
-}
-
-.swiper-slide p {
-    color: var(--text_color);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
-
-
-
-
-
-
 
 
 
@@ -2316,11 +2247,11 @@ body .cursor.hovered {
         font-size: 10px;
     }
 
-    .swiper-wrapper {
+    .work-list {
         width: 90vw;
     }
 
-    .swiper-slide {
+    .work {
         width: 90% !important;
         margin: .6em 0;
     }
@@ -2616,7 +2547,7 @@ body .cursor.hovered {
 
 
 
-    .swiper-slide {
+    .work {
         width: 100px;
         height: 300px;
     }

@@ -91,7 +91,6 @@ function playClickSound() {
   clickSound.currentTime = 0;
   clickSound.play();
 }
-
 const progText = document.querySelectorAll(".progText");
 const progress = document.querySelectorAll(".progress");
 const progContainer = document.querySelectorAll(".pg-container");
@@ -99,7 +98,7 @@ let bol = false;
 
 window.addEventListener("scroll", function () {
   for (let i = 0; i < progContainer.length; i++) {
-    if (window.pageYOffset > progContainer[i].offsetTop - 600 && bol === false) {
+    if (window.pageYOffset > progContainer[i].offsetTop - 900 && bol === false) {
       for (let j = 0; j < progText.length; j++) {
         progText[j].innerText = 0;
         let count = 0;
@@ -111,7 +110,7 @@ window.addEventListener("scroll", function () {
           if (count < target) {
             count++;
             progText[j].innerText = count + "%";
-            setTimeout(updateCount, 1); // Decrease the delay to speed up the animation
+            setTimeout(updateCount, 3); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
 
           } else {
             progText[j].innerText = target + "%";
@@ -125,6 +124,7 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+
 
 
 
