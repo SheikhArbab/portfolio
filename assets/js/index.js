@@ -20,8 +20,8 @@ list.forEach((item) =>
 
 var typed = new Typed(".auto-type", {
   strings: ["Arbab Zafar", "Web Developer", "Graphic Designer", "Student", "Freelancer"],
-  typeSpeed: 20,
-  backSpeed: 2,
+  typeSpeed: 3,
+  backSpeed: 1,
   loop: true
 });
 
@@ -110,7 +110,7 @@ window.addEventListener("scroll", function () {
           if (count < target) {
             count++;
             progText[j].innerText = count + "%";
-            setTimeout(updateCount, 1); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
+            setTimeout(updateCount, 3); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
 
           } else {
             progText[j].innerText = target + "%";
