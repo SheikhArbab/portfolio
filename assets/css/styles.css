@@ -27,8 +27,8 @@ body {
 }
 
 ::selection {
-    color: var(--main_color);
-    background: yellow;
+    color: black;
+    background: gray;
 }
 
 
@@ -623,21 +623,9 @@ body {
 
 }
 
-
-
-
-
-
-
 .dropdown {
     display: none;
 }
-
-
-
-
-
-
 
 .navbar {
     position: relative;
@@ -653,7 +641,6 @@ body {
     transition-delay: .25s;
     background-color: transparent;
 }
-
 
 .navbar ul {
     display: flex;
@@ -751,8 +738,6 @@ body {
     color: var(--main_color);
 }
 
-
-
 .navbar ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
 }
@@ -786,21 +771,10 @@ body {
     opacity: .3;
 }
 
-
-
 /* -------------------header----------------- */
 /* -------------------main----------------- */
 
-
-
-
-
-
 /* -------------------hero----------------- */
-
-
-
-
 
 
 section {
