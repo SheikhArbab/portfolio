@@ -96,35 +96,40 @@ const progress = document.querySelectorAll(".progress");
 const progContainer = document.querySelectorAll(".pg-container");
 let bol = false;
 
+function animateCounter(element, target, duration) {
+  const start = 0;
+  const increment = (target / duration) * 10;
+  let currentTime = 0;
+
+  function updateCount() {
+    currentTime += 10;
+    const progress = Math.min(increment * currentTime, target);
+    element.innerText = Math.floor(progress) + "%";
+
+    if (currentTime < duration) {
+      setTimeout(updateCount, 10); // Delay of 10 milliseconds
+    }
+  }
+
+  updateCount();
+}
+
 window.addEventListener("scroll", function () {
   for (let i = 0; i < progContainer.length; i++) {
     if (window.pageYOffset > progContainer[i].offsetTop - 4000 && bol === false) {
       for (let j = 0; j < progText.length; j++) {
         progText[j].innerText = 0;
-        let count = 0;
         progress[j].style.bottom = "100%";
         progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
 
-        function updateCount() {
-          const target = parseInt(progText[j].dataset.count);
-          if (count < target) {
-            count++;
-            progText[j].innerText = count + "%";
-            setTimeout(updateCount, 30); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
-
-          } else {
-            progText[j].innerText = target + "%";
-          }
-        }
-
-        updateCount();
+        const target = parseInt(progText[j].dataset.count);
+        animateCounter(progText[j], target, 3000); // 3000 milliseconds (3 seconds) duration
 
         bol = true;
       }
     }
   }
 });
-
 
 
 
