@@ -98,7 +98,7 @@ let bol = false;
 
 window.addEventListener("scroll", function () {
   for (let i = 0; i < progContainer.length; i++) {
-    if (window.pageYOffset > progContainer[i].offsetTop - 2000 && bol === false) {
+    if (window.pageYOffset > progContainer[i].offsetTop - 4000 && bol === false) {
       for (let j = 0; j < progText.length; j++) {
         progText[j].innerText = 0;
         let count = 0;
@@ -110,7 +110,7 @@ window.addEventListener("scroll", function () {
           if (count < target) {
             count++;
             progText[j].innerText = count + "%";
-            setTimeout(updateCount, 3); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
+            setTimeout(updateCount, 30); // Matched delay with CSS transition duration (30 milliseconds for 3 seconds)
 
           } else {
             progText[j].innerText = target + "%";
