@@ -20,8 +20,8 @@ list.forEach((item) =>
 
 var typed = new Typed(".auto-type", {
   strings: ["Arbab Zafar", "Web Developer", "Graphic Designer", "Student", "Freelancer"],
-  typeSpeed: 3,
-  backSpeed: 1,
+  typeSpeed: 6,
+  backSpeed: 3,
   loop: true
 });
 
@@ -107,7 +107,7 @@ function animateCounter(element, target, duration) {
     element.innerText = Math.floor(progress) + "%";
 
     if (currentTime < duration) {
-      setTimeout(updateCount, 10); // Delay of 10 milliseconds
+      setTimeout(updateCount, 30); // Delay of 10 milliseconds
     }
   }
 
@@ -116,7 +116,7 @@ function animateCounter(element, target, duration) {
 
 window.addEventListener("scroll", function () {
   for (let i = 0; i < progContainer.length; i++) {
-    if (window.pageYOffset > progContainer[i].offsetTop - 4000 && bol === false) {
+    if (window.pageYOffset> progContainer[i].offsetTop - 4000 && bol === false) {
       for (let j = 0; j < progText.length; j++) {
         progText[j].innerText = 0;
         progress[j].style.bottom = "100%";
