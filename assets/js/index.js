@@ -56,8 +56,8 @@ window.addEventListener('scroll', function () {
 window.addEventListener('load', function () {
   const preloader = document.querySelector('#preloader');
   setTimeout(function () {
-    preloader.style.display = 'none';
-  }, 200);
+    preloader.style.height = '0';
+  }, 100);
 });
 
 function showDropdown() {
