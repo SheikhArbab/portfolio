@@ -107,26 +107,28 @@ function animateCounter(element, target, duration) {
     element.innerText = Math.floor(progress) + "%";
 
     if (currentTime < duration) {
-      setTimeout(updateCount, 30); // Delay of 10 milliseconds
+      setTimeout(updateCount, 10); // Delay of 10 milliseconds
     }
   }
 
   updateCount();
 }
 
+// Updated event listener to check if #skills section is in view
 window.addEventListener("scroll", function () {
-  for (let i = 0; i < progContainer.length; i++) {
-    if (window.pageYOffset> progContainer[i].offsetTop - 4000 && bol === false) {
-      for (let j = 0; j < progText.length; j++) {
-        progText[j].innerText = 0;
-        progress[j].style.bottom = "100%";
-        progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
+  const skillsSection = document.getElementById("skills");
+  const skillsSectionRect = skillsSection.getBoundingClientRect();
 
-        const target = parseInt(progText[j].dataset.count);
-        animateCounter(progText[j], target, 3000); // 3000 milliseconds (3 seconds) duration
+  if (skillsSectionRect.top < window.innerHeight && !bol) {
+    for (let j = 0; j < progText.length; j++) {
+      progText[j].innerText = 0;
+      progress[j].style.bottom = "100%";
+      progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
 
-        bol = true;
-      }
+      const target = parseInt(progText[j].dataset.count);
+      animateCounter(progText[j], target, 9000); // 3000 milliseconds (3 seconds) duration
+
+      bol = true;
     }
   }
 });
