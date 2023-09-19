@@ -60,25 +60,6 @@ window.addEventListener('load', function () {
   }, 100);
 });
 
-function showDropdown() {
-  let dropdownContent = document.querySelector("#dropdown-content");
-  if (dropdownContent.style.display === "none") {
-    dropdownContent.style.display = "block";
-  } else {
-    dropdownContent.style.display = "none";
-  }
-}
-
-const dropdownToggle = document.querySelector('.dropdown-toggle');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
-document.querySelector('.menu-container').addEventListener('click', function () {
-  this.classList.toggle('clicked');
-});
-dropdownToggle.addEventListener('click', function () {
-  dropdownMenu.classList.toggle('show');
-});
-
 
 
 var audioButtons = Array.from(document.getElementsByClassName("audioBtn"));
@@ -91,47 +72,6 @@ function playClickSound() {
   clickSound.currentTime = 0;
   clickSound.play();
 }
-const progText = document.querySelectorAll(".progText");
-const progress = document.querySelectorAll(".progress");
-const progContainer = document.querySelectorAll(".pg-container");
-let bol = false;
-
-function animateCounter(element, target, duration) {
-  const start = 0;
-  const increment = (target / duration) * 10;
-  let currentTime = 0;
-
-  function updateCount() {
-    currentTime += 10;
-    const progress = Math.min(increment * currentTime, target);
-    element.innerText = Math.floor(progress) + "%";
-
-    if (currentTime < duration) {
-      setTimeout(updateCount, 10); // Delay of 10 milliseconds
-    }
-  }
-
-  updateCount();
-}
-
-// Updated event listener to check if #skills section is in view
-window.addEventListener("scroll", function () {
-  const skillsSection = document.getElementById("skills");
-  const skillsSectionRect = skillsSection.getBoundingClientRect();
-
-  if (skillsSectionRect.top < window.innerHeight && !bol) {
-    for (let j = 0; j < progText.length; j++) {
-      progText[j].innerText = 0;
-      progress[j].style.bottom = "100%";
-      progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
-
-      const target = parseInt(progText[j].dataset.count);
-      animateCounter(progText[j], target, 9000); // 3000 milliseconds (3 seconds) duration
-
-      bol = true;
-    }
-  }
-});
 
 
 
@@ -164,19 +104,7 @@ filterButtons.forEach(button => {
 
 
 
-function myFunction() {
-  let dots = document.querySelector("#dots");
-  let moreText = document.querySelector("#more");
-  let btnText = document.querySelector("#moreBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
+
+
 
