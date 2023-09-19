@@ -75,31 +75,6 @@ function playClickSound() {
 
 
 
-const buttonGroup = document.querySelector('.button-group');
-const filterButtons = buttonGroup.querySelectorAll('.filter-button');
-const categoryItems = document.querySelectorAll('.category-item');
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    let btn = document.querySelector('.sparkle-button');
-    const filterValue = button.getAttribute('data-filter');
-
-    // Show/hide items based on selected filter
-    categoryItems.forEach(item => {
-      if (filterValue === 'all' || item.classList.contains(filterValue)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-
-    // Toggle active class for selected filter button
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
-});
-
-
 
 
 
