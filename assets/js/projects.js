@@ -55,9 +55,9 @@ filterButtons.forEach(button => {
 
         categoryItems.forEach(item => {
             if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                item.style.display = 'block';
+                item.style.height = '30rem';
             } else {
-                item.style.display = 'none';
+                item.style.height = '0';
             }
         });
 

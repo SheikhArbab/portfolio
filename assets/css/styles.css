@@ -172,6 +172,7 @@ body {
     transition: box-shadow var(--transition), scale var(--transition), background var(--transition);
     scale: calc(1 + (var(--active) * 0.1));
     transition: .3s;
+    text-transform: capitalize;
 }
 
 .sparkle-button:active {
@@ -1286,6 +1287,7 @@ strong {
     margin: 1em;
     transition: all .5s ease;
     position: relative;
+    bottom: 0;
 }
 
 .work:hover {

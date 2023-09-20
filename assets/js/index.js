@@ -19,7 +19,7 @@ list.forEach((item) =>
   item.addEventListener('click', activeLink));
 
 var typed = new Typed(".auto-type", {
-  strings: ["Arbab Zafar", "Web Developer", "Graphic Designer", "Student", "Freelancer"],
+  strings: ["Arbab Zafar", "Frontend Developer", "Graphic Designer", "Student", "Freelancer"],
   typeSpeed: 6,
   backSpeed: 3,
   loop: true
