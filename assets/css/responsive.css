@@ -271,13 +271,13 @@
         border-bottom: 1rem solid rebeccapurple;
         border-left: .1rem var(--main_color);
         border-right: .5rem var(--main_color);
-        animation: rotate 5s linear infinite;
+        
+    animation: circle 6s linear infinite;
     }
 
 
 
-
-
+      
 
 
 

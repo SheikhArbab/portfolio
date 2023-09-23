@@ -137,14 +137,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .sparkle-button {
     --active: 0;
     --bg: radial-gradient(40% 50% at center 100%,
@@ -864,6 +856,7 @@ section {
     line-height: 1.3;
     width: fit-content;
     height: 150px;
+    filter: drop-shadow(4px 6px 2px black);
 }
 
 .home-content p {

@@ -20,8 +20,8 @@ list.forEach((item) =>
 
 var typed = new Typed(".auto-type", {
   strings: ["Arbab Zafar", "Frontend Developer", "Graphic Designer", "Student", "Freelancer"],
-  typeSpeed: 6,
-  backSpeed: 3,
+  typeSpeed: 12,
+  backSpeed: 8,
   loop: true
 });
 

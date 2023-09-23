@@ -1,4 +1,4 @@
-import projects from './db.js';
+import projects from './projectsData/db.js';
 
 
 
@@ -47,27 +47,15 @@ const buttonGroup = document.querySelector('.button-group');
 const filterButtons = buttonGroup.querySelectorAll('.filter-button');
 const categoryItems = document.querySelectorAll('.category-item');
 
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        let btn = document.querySelector('.sparkle-button');
         const filterValue = button.getAttribute('data-filter');
 
-
         categoryItems.forEach(item => {
-            if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                item.style.height = '30rem';
-                setTimeout(() => {
-                    
-                    item.style.display = 'block';
-                    }, 400);
-            } else {
-                item.style.height = '0';
-                setTimeout(() => {
-                    
-                item.style.display = 'none';
-                }, 400);
-            }
-        });
+            filterValue === 'all' || item.classList.contains(filterValue) ? 
+        (item.style.height = '30rem',   setTimeout(() => { item.style.display = 'block'   }, 400))
+        : (item.style.height = '0', setTimeout(() => { item.style.display = 'none' }, 400))});
 
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
