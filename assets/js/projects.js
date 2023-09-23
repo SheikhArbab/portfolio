@@ -1,4 +1,4 @@
-import projects from './projectsData/db.js';
+import projects from '../projectsData/db.js';
 
 
 

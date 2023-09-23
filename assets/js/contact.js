@@ -1,7 +1,7 @@
 document.querySelector('#contact').innerHTML = `
 
 
-<form action=https://formspree.io/f/xbjenndd id=contact-form method=post>
+<form action="https://formspree.io/f/xbjenndd" id="contact-form" method="post">
 <h2 class=heading>Contact<span> Us</span></h2>
 <input type="name" id="name" name="name" placeholder="Your Name" required minlength=3
     autocomplete=off autocapitalize=on>
