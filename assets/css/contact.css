@@ -7,10 +7,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     height: 150em;
+    padding-bottom: 0;
 }
 
 
@@ -35,6 +33,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.567);
 }
 
 .solar-syst:after {

@@ -627,7 +627,7 @@ body {
 
 .navbar {
     position: relative;
-    width: 400px;
+    width: 450px;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -642,7 +642,7 @@ body {
 
 .navbar ul {
     display: flex;
-    width: 350px;
+    width: 400px;
 }
 
 .navbar ul li {
@@ -741,25 +741,86 @@ body {
 }
 
 .navbar ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(70px * 1));
+    transform: translateX(calc(65px * 1));
 }
 
 .navbar ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(70px * 2));
+    transform: translateX(calc(66px * 2));
 }
 
 .navbar ul li:nth-child(4).active~.indicator {
-    transform: translateX(calc(70px * 3));
+    transform: translateX(calc(66px * 3));
 }
 
 .navbar ul li:nth-child(5).active~.indicator {
-    transform: translateX(calc(70px * 4));
+    transform: translateX(calc(66px * 4));
 }
 
-.menu {
-    width: 30px;
+.navbar ul li:nth-child(6).active~.indicator {
+    transform: translateX(calc(66.4px * 5));
 }
 
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+    display: none;
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(45deg, var(--main_color), var(--pink));
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+    width: 70%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+    background: linear-gradient(-45deg, var(--main_color), var(--pink));
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
 
 
 /* -------------------header----------------- */
@@ -1250,13 +1311,78 @@ strong {
 
 
 /* -------------------skills----------------- */
+
+
+
+
+/* -------------------testimonial----------------- */
+.testimonial {
+    background-color: var(--secon_bg);
+    height: 100vh;
+    padding: 20px;
+}
+
+.owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.owl-carousel .item {
+    margin: 5px;
+}
+
+.slide {
+    height: 400px;
+    width: 400px;
+    padding-top: 50px;
+}
+
+.slide>.slider-box {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.176);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.83);
+    position: relative;
+}
+
+.slider-box>figure {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid var(--secon_bg);
+}
+
+.slider-box>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* -------------------testimonial----------------- */
+
+
+
+
+
+
+
+
 /* -------------------projects----------------- */
 .project {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--secon_bg);
     overflow: hidden;
     padding-left: 3rem;
     padding-right: 3rem;

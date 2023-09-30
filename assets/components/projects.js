@@ -29,7 +29,7 @@ document.querySelector('#cateBtn').innerHTML = categories.map((category) => (
 
 document.querySelector('.work-list').innerHTML = projects.map((project) => {
     return (`
-            <div class="work ${project.categoryClass}" key=${project.id}>
+            <div class="work menuIn  ${project.categoryClass}" key=${project.id}>
                 <img src="${project.image}" alt="${project.title}">
                 <div class="layer">
                     <h3>${project.title}</h3>
@@ -53,9 +53,10 @@ filterButtons.forEach(button => {
         const filterValue = button.getAttribute('data-filter');
 
         categoryItems.forEach(item => {
-            filterValue === 'all' || item.classList.contains(filterValue) ? 
-        (item.style.height = '30rem',   setTimeout(() => { item.style.display = 'block'   }, 400))
-        : (item.style.height = '0', setTimeout(() => { item.style.display = 'none' }, 400))});
+            filterValue === 'all' || item.classList.contains(filterValue) ?
+                (item.style.display = 'block' )
+                : (item.style.display = 'none')
+        });
 
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
