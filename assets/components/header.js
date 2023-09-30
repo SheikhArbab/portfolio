@@ -10,7 +10,7 @@
 <ul>
     <li class="list active">
         <a href="#home" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/home-min.png alt=""></span>
+            <span class="icon"><img src=./assets/imgs/navicons/home.png alt=""></span>
             <span class="text">Home</span>
         
         </a>
@@ -31,8 +31,8 @@
     </li>
     <li class="list">
         <a href="#testimonial" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/skill-min.png alt=""></span>
-            <span class="text">testimonial</span>
+            <span class="icon"><img src=./assets/imgs/navicons/testimonial.png alt=""></span>
+            <span class="text">Testimonial</span>
         
         </a>
     </li>
@@ -51,7 +51,7 @@
         
         </a>
     </li>
-    <div class=indicator></div>
+    <div class="indicator"></div>
 </ul>
 </nav>
 

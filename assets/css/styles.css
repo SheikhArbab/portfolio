@@ -1319,7 +1319,7 @@ strong {
 .testimonial {
     background-color: var(--secon_bg);
     height: 100vh;
-    padding: 20px;
+    padding: 12rem 10px;
 }
 
 .owl-carousel {
@@ -1347,8 +1347,22 @@ strong {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.83);
     position: relative;
+    padding: 0px 40px 50px;
+ display: flex;   
+ align-items: center;
+ justify-content: space-evenly;
+ flex-direction: column;
 }
-
+.slide>.slider-box> h1 {
+font-size:250%;
+}
+.slide>.slider-box> p {
+font-size:100%;
+height: 50%;
+background-color: red;
+width: 100%;
+overflow: hidden;
+}
 .slider-box>figure {
     width: 80px;
     height: 80px;
@@ -1407,10 +1421,10 @@ strong {
     transition: all .5s ease;
     position: relative;
     bottom: 0;
+    box-shadow: 0 0 10px 0 black, inset 0 0 15px 0 var(--pink);
 }
 
 .work:hover {
-    box-shadow: 0 0 10px 0 black;
     transform: translateY(-10px);
 }
 
@@ -1418,8 +1432,7 @@ strong {
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    object-fit: contain;
     display: block;
     transition: all .5s ease;
 }
