@@ -189,7 +189,7 @@ const projects = [
         {
         id: 20,
         title: "View",
-        description: "",
+        description: "Nike branding with mockup",
         category: "graphic",
         image: "./assets/graphic/g-8.jpg",
         link: "./assets/graphic/g-8.jpg ",
@@ -243,7 +243,7 @@ const projects = [
         {
         id: 26,
         title: "View",
-        description: "",
+        description: "fiverr gig",
         category: "graphic",
         image: "./assets/graphic/g-14.jpg",
         link: "./assets/graphic/g-14.jpg ",
@@ -258,8 +258,33 @@ const projects = [
         link: "./assets/graphic/g-15.jpg ",
         categoryClass: "category-item all graphic"
     },
-
-
+        {
+        id: 28,
+        title: "View",
+        description: "",
+        category: "graphic",
+        image: "./assets/graphic/g-16.jpg",
+        link: "./assets/graphic/g-16.jpg ",
+        categoryClass: "category-item all graphic"
+    },
+        {
+        id: 29,
+        title: "View",
+        description: "",
+        category: "graphic",
+        image: "./assets/graphic/g-17.jpg",
+        link: "./assets/graphic/g-17.jpg ",
+        categoryClass: "category-item all graphic"
+    },
+    {
+        id: 30,
+        title: "Nike react app",
+        description: "Nike React app useing html css js react formik yup and more...",
+        category: "web app",
+        image: "./assets/imgs/projects/nike.png",
+        link: "https://nikereactapp.netlify.app/",
+        categoryClass: "category-item all web app"
+    },
 ]
 
 export default projects

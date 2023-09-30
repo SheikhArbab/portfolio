@@ -116,6 +116,17 @@
     }
 
 
+
+    .slide {
+        height: 400px;
+        width: 80vw;
+        padding-top: 50px;
+    }
+
+
+
+    
+
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
