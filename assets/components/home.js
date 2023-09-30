@@ -1505,10 +1505,7 @@ document.querySelector('#home').innerHTML = `
     </path>
 </svg>
 </figure>
-<audio id=clickSound>
-<source src=./assets/audio/mixkit-quick-win-video-game-notification-269.wav type=audio/mpeg>
-<source src=./assets/audio/mixkit-quick-win-video-game-notification-269.wav type=audio/ogg>
-</audio>
+
 
 
 `

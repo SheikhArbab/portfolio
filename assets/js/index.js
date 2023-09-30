@@ -62,16 +62,8 @@ window.addEventListener('load', function () {
 
 
 
-var audioButtons = Array.from(document.getElementsByClassName("audioBtn"));
-audioButtons.forEach(function (button) {
-  button.addEventListener("click", playClickSound);
-});
 
-function playClickSound() {
-  var clickSound = document.getElementById("clickSound");
-  clickSound.currentTime = 0;
-  clickSound.play();
-}
+
 
 
 
