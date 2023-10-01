@@ -106,7 +106,7 @@ const projects = [
     {
         id: 12,
         title: "View",
-        description: "",
+        description: "School post with mockup",
         category: "graphic",
         image: "./assets/graphic/g.jpg",
         link: "./assets/graphic/g.jpg ",
@@ -116,7 +116,7 @@ const projects = [
     {
         id: 13,
         title: "View",
-        description: "",
+        description: "Social media add",
         category: "graphic",
         image: "./assets/graphic/g-1.png",
         link: "./assets/graphic/g-1.png ",
@@ -126,7 +126,7 @@ const projects = [
     {
         id: 14,
         title: "View",
-        description: "",
+        description: "Sprite post manipulation using photoshop",
         category: "graphic",
         image: "./assets/graphic/g-2.jpg",
         link: "./assets/graphic/g-2.jpg ",
@@ -136,7 +136,7 @@ const projects = [
     {
         id: 15,
         title: "View",
-        description: "",
+        description: "Turn Day into Night in Photoshop",
         category: "graphic",
         image: "./assets/graphic/g-3.jpg",
         link: "./assets/graphic/g-3.jpg ",
@@ -145,7 +145,7 @@ const projects = [
     {
         id: 16,
         title: "View",
-        description: "",
+        description: "Orange manipulation",
         category: "graphic",
         image: "./assets/graphic/g-4.jpg",
         link: "./assets/graphic/g-4.jpg ",
@@ -154,7 +154,7 @@ const projects = [
     {
         id: 17,
         title: "View",
-        description: "",
+        description: "Shopping sale post with mockup",
         category: "graphic",
         image: "./assets/graphic/g-5.jpg",
         link: "./assets/graphic/g-5.jpg ",
@@ -163,7 +163,7 @@ const projects = [
     {
         id: 18,
         title: "View",
-        description: "",
+        description: "Nike shoes particle effect manipulation",
         category: "graphic",
         image: "./assets/graphic/g-6.jpg",
         link: "./assets/graphic/g-6.jpg ",
@@ -172,7 +172,7 @@ const projects = [
     {
         id: 19,
         title: "View",
-        description: "",
+        description: "Social Media Post",
         category: "graphic",
         image: "./assets/graphic/g-7.jpg",
         link: "./assets/graphic/g-7.jpg ",
@@ -190,7 +190,7 @@ const projects = [
     {
         id: 21,
         title: "View",
-        description: "",
+        description: "Fiverr gig",
         category: "graphic",
         image: "./assets/graphic/g-9.jpg",
         link: "./assets/graphic/g-9.jpg ",
@@ -199,7 +199,7 @@ const projects = [
     {
         id: 22,
         title: "View",
-        description: "",
+        description: "Neon effect",
         category: "graphic",
         image: "./assets/graphic/g-10.jpg",
         link: "./assets/graphic/g-10.jpg ",
@@ -208,7 +208,7 @@ const projects = [
     {
         id: 23,
         title: "View",
-        description: "",
+        description: "Custom GYM poster",
         category: "graphic",
         image: "./assets/graphic/g-11.jpg",
         link: "./assets/graphic/g-11.jpg ",
@@ -217,7 +217,7 @@ const projects = [
     {
         id: 24,
         title: "View",
-        description: "",
+        description: "Manipulation",
         category: "graphic",
         image: "./assets/graphic/g-12.jpg",
         link: "./assets/graphic/g-12.jpg ",
@@ -226,7 +226,7 @@ const projects = [
     {
         id: 25,
         title: "View",
-        description: "",
+        description: "Custom Gamming Poster",
         category: "graphic",
         image: "./assets/graphic/g-13.jpg",
         link: "./assets/graphic/g-13.jpg ",
@@ -244,7 +244,7 @@ const projects = [
     {
         id: 27,
         title: "View",
-        description: "",
+        description: "Instagram post",
         category: "graphic",
         image: "./assets/graphic/g-15.jpg",
         link: "./assets/graphic/g-15.jpg ",
@@ -253,7 +253,7 @@ const projects = [
     {
         id: 28,
         title: "View",
-        description: "",
+        description: "Instagram post",
         category: "graphic",
         image: "./assets/graphic/g-16.jpg",
         link: "./assets/graphic/g-16.jpg ",
@@ -262,7 +262,7 @@ const projects = [
     {
         id: 29,
         title: "View",
-        description: "",
+        description: "YouTube fully responsive banner",
         category: "graphic",
         image: "./assets/graphic/g-17.jpg",
         link: "./assets/graphic/g-17.jpg ",
