@@ -50,15 +50,7 @@ const projects = [
         categoryClass: "category-item all website"
     },
 
-    {
-        id: 6,
-        title: "Portfolio",
-        description: "I converted the Figma file into a functional website using HTML and CSS",
-        category: "website",
-        image: "./assets/imgs/projects/arbab project2.jpg",
-        link: "https://sheikharbab.github.io/project-portfolio",
-        categoryClass: "category-item all website"
-    },
+
 
     {
         id: 7,
@@ -109,9 +101,9 @@ const projects = [
         link: "https://sheikharbab.github.io/project-tailgame",
         categoryClass: "category-item all website"
     },
-    
-    
-        {
+
+
+    {
         id: 12,
         title: "View",
         description: "",
@@ -120,8 +112,8 @@ const projects = [
         link: "./assets/graphic/g.jpg ",
         categoryClass: "category-item all graphic"
     },
-    
-        {
+
+    {
         id: 13,
         title: "View",
         description: "",
@@ -130,8 +122,8 @@ const projects = [
         link: "./assets/graphic/g-1.png ",
         categoryClass: "category-item all graphic"
     },
-    
-        {
+
+    {
         id: 14,
         title: "View",
         description: "",
@@ -140,8 +132,8 @@ const projects = [
         link: "./assets/graphic/g-2.jpg ",
         categoryClass: "category-item all graphic"
     },
-    
-        {
+
+    {
         id: 15,
         title: "View",
         description: "",
@@ -150,7 +142,7 @@ const projects = [
         link: "./assets/graphic/g-3.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 16,
         title: "View",
         description: "",
@@ -159,7 +151,7 @@ const projects = [
         link: "./assets/graphic/g-4.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 17,
         title: "View",
         description: "",
@@ -168,7 +160,7 @@ const projects = [
         link: "./assets/graphic/g-5.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 18,
         title: "View",
         description: "",
@@ -177,7 +169,7 @@ const projects = [
         link: "./assets/graphic/g-6.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 19,
         title: "View",
         description: "",
@@ -186,7 +178,7 @@ const projects = [
         link: "./assets/graphic/g-7.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 20,
         title: "View",
         description: "Nike branding with mockup",
@@ -195,7 +187,7 @@ const projects = [
         link: "./assets/graphic/g-8.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 21,
         title: "View",
         description: "",
@@ -204,7 +196,7 @@ const projects = [
         link: "./assets/graphic/g-9.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 22,
         title: "View",
         description: "",
@@ -213,7 +205,7 @@ const projects = [
         link: "./assets/graphic/g-10.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 23,
         title: "View",
         description: "",
@@ -222,7 +214,7 @@ const projects = [
         link: "./assets/graphic/g-11.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 24,
         title: "View",
         description: "",
@@ -231,7 +223,7 @@ const projects = [
         link: "./assets/graphic/g-12.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 25,
         title: "View",
         description: "",
@@ -240,7 +232,7 @@ const projects = [
         link: "./assets/graphic/g-13.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 26,
         title: "View",
         description: "fiverr gig",
@@ -249,7 +241,7 @@ const projects = [
         link: "./assets/graphic/g-14.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 27,
         title: "View",
         description: "",
@@ -258,7 +250,7 @@ const projects = [
         link: "./assets/graphic/g-15.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 28,
         title: "View",
         description: "",
@@ -267,7 +259,7 @@ const projects = [
         link: "./assets/graphic/g-16.jpg ",
         categoryClass: "category-item all graphic"
     },
-        {
+    {
         id: 29,
         title: "View",
         description: "",

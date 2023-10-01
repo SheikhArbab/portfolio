@@ -1,3 +1,78 @@
+
+
+// header
+document.querySelector('#header').innerHTML = `
+
+<a href="./index.html" class="logo audioBtn">
+<img src="./assets/imgs/logo/arbab.png" class="audioBtn" alt="">
+</a>
+
+<nav class="navbar menuIn ">
+<ul>
+    <li class="list active">
+        <a href="#home" class="audioBtn">
+            <span class="icon"><img src=./assets/imgs/navicons/home.png alt=""></span>
+            <span class="text">Home</span>
+        
+        </a>
+    </li>
+    <li class="list">
+        <a href=#about class="audioBtn">
+            <span class="icon"><img src=./assets/imgs/navicons/information-min.png alt=""></span>
+            <span class="text">About</span>
+        
+        </a>
+    </li>
+    <li class="list">
+        <a href="#skills" class="audioBtn">
+            <span class="icon"><img src=./assets/imgs/navicons/skill-min.png alt=""></span>
+            <span class="text">Skills</span>
+        
+        </a>
+    </li>
+    <li class="list">
+        <a href="#testimonial" class="audioBtn">
+            <span class="icon"><img src=./assets/imgs/navicons/testimonial.png alt=""></span>
+            <span class="text">Testimonial</span>
+        
+        </a>
+    </li>
+
+    <li class="list">
+        <a href="#project" class="audioBtn">
+            <span class="icon"><img src=./assets/imgs/navicons/project-min.png alt=""></span>
+            <span class="text">Project</span>
+        
+        </a>
+    </li>
+    <li class="list">
+        <a href="#contact" class="audioBtn">
+            <span class="icon"><img src="./assets/imgs/navicons/contact.png" alt=""></span>
+            <span class="text">Contact</span>
+        
+        </a>
+    </li>
+    <div class="indicator"></div>
+</ul>
+</nav>
+
+<input type="checkbox" id="checkbox">
+<label for="checkbox" class="toggle">
+    <div class="bars" id="bar1"></div>
+    <div class="bars" id="bar2"></div>
+    <div class="bars" id="bar3"></div>
+</label>
+
+
+`
+
+document.querySelector('.toggle').addEventListener('click', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
+});
+
+
+// home
 document.querySelector('#home').innerHTML = `
 
 
@@ -1506,6 +1581,395 @@ document.querySelector('#home').innerHTML = `
 </svg>
 </figure>
 
+`
+
+// about
+
+
+
+document.querySelector("#about").innerHTML = `
+
+
+
+<h2 class=heading>About <span>Me</span></h2>
+<div class=about-img>
+    <img src="./assets/imgs/arbab-profile.png" alt="">
+    <span class=circle-spin></span>
+</div>
+<div class=about-content>
+    <h3>Arbab Zafar</h3>
+    <p>🌟 Arbab Zafar: A Multifaceted Creative in the World of Design and Development
+
+    Meet Arbab Zafar, a talented graphic designer and frontend web developer who has mastered a diverse array of tools and technologies to craft stunning digital experiences. With expertise in HTML, CSS, JavaScript, React.js, Formik, Yup, Redux, animation, Tailwind CSS, and Bootstrap, Arbab is a true virtuoso of the digital realm. <span id=dots>...</span><span id=more> 
+    
+    🎨 Designing Visual Wonders
+
+    As a graphic designer, Arbab has an innate ability to transform ideas into captivating visual designs. His creative prowess shines through in his ability to create eye-catching logos, illustrations, and user interfaces that leave a lasting impression. Arbab's designs are not just visually appealing; they also prioritize user experience, ensuring that every click and interaction feels intuitive and delightful.
+    
+   <span class="about-heading"> 💻 Frontend Web Development Guru</span>
+    
+    Arbab's frontend web development skills are equally impressive. He is a master of HTML, CSS, and JavaScript, crafting responsive and pixel-perfect websites that work flawlessly on all devices. With React.js, he takes user interfaces to the next level, building dynamic and interactive web applications that engage users and keep them coming back for more.
+    
+     <span class="about-heading">📋 Formik and Yup Wizard</span>
+    
+    Arbab is also well-versed in Formik and Yup, two essential tools for form management and validation in React applications. His proficiency in these libraries ensures that user data is handled with precision, making for a seamless and error-free experience.
+    
+     <span class="about-heading">🔄 Redux Maestro</span>
+    
+    In the world of state management, Arbab relies on Redux to maintain application data with elegance and efficiency. His Redux implementations guarantee that data flows smoothly, enhancing the overall user experience.
+    
+     <span class="about-heading">✨ Bringing Websites to Life with Animation</span>
+    
+    Arbab's websites are not just static pages; they come alive with animation. Whether it's subtle micro-interactions or captivating page transitions, Arbab's animations breathe life into digital experiences, making them engaging and unforgettable.
+    
+     <span class="about-heading">🎨 Master of CSS Frameworks</span>
+    
+    With expertise in Tailwind CSS and Bootstrap, Arbab is well-equipped to streamline development processes and create visually consistent designs. These CSS frameworks enable him to expedite frontend development while maintaining a polished and professional appearance.
+    
+     <span class="about-heading">🌐 Embracing the MERN Stack</span>
+    
+    But Arbab's journey doesn't stop at frontend development. He's currently on the path to becoming a full-stack developer, diving into the MERN stack. This ambitious pursuit demonstrates his commitment to mastering all aspects of web development, from server-side scripting with Node.js and Express to database management with MongoDB.
+    
+    <span class="about-heading"> 📝 A Wordsmith and Optimization Enthusiast</span>
+    
+    Arbab Zafar isn't just a design and development virtuoso; he's also a wordsmith who knows the importance of crafting beautiful and optimized content. His keen eye for detail ensures that written content is not only informative but also engaging, making it an integral part of the overall user experience.
+    
+    🔥 In conclusion, Arbab Zafar is a creative powerhouse who seamlessly blends design and development to craft visually stunning, user-friendly, and technically robust digital experiences. His journey into full-stack development and commitment to optimizing every aspect of his work makes him a force to be reckoned with in the world of web development. Keep an eye on this rising star as he continues to push the boundaries of what's possible in the digital realm.
+    
+    
+    
+    
+    
+    
+            
+            
+            
+            
+            </span></p>
+
+    <div class="btn-box btns">
+        <button  class="btn audioBtn" id="moreBtn">Read more</button>
+    </div>
+</div>
+
+
+
+
+
+`;
+
+document.querySelector("#moreBtn").addEventListener("click", () => {
+  let dots = document.querySelector("#dots");
+  let moreText = document.querySelector("#more");
+  let btnText = document.querySelector("#moreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+});
+
+
+
+// skills
+
+
+document.querySelector('#skills').innerHTML = `
+
+<h2 class=heading>
+My <span>Skills</span>
+</h2>
+<div class=pg-container>
+<div class=progress-card>
+    <div class=progress-circle>
+        <div class=progress-content>
+            <h5 class=progText data-count=90>0</h5>
+        </div>
+        <div class=progress>
+        </div>
+    </div>
+    <h5>HTML/CSS</h5>
+</div>
+<div class=progress-card>
+    <div class=progress-circle>
+        <div class=progress-content>
+            <h5 class=progText data-count=30>0</h5>
+        </div>
+        <div class=progress>
+        </div>
+    </div>
+    <h5>JAVA SCRIPT</h5>
+</div>
+<div class=progress-card>
+    <div class=progress-circle>
+        <div class=progress-content>
+            <h5 class=progText data-count=85>0</h5>
+        </div>
+        <div class=progress>
+        </div>
+    </div>
+    <h5>BOOTSTRAP</h5>
+</div>
+<div class=progress-card>
+    <div class=progress-circle>
+        <div class=progress-content>
+            <h5 class=progText data-count=70>0</h5>
+        </div>
+        <div class=progress>
+        </div>
+    </div>
+    <h5>TAILWINDCSS</h5>
+</div>
+</div>`
+
+
+
+
+const progText = document.querySelectorAll(".progText");
+const progress = document.querySelectorAll(".progress");
+const progContainer = document.querySelectorAll(".pg-container");
+let bol = false;
+
+function animateCounter(element, target, duration) {
+  const start = 0;
+  const increment = (target / duration) * 10;
+  let currentTime = 0;
+
+  function updateCount() {
+    currentTime += 10;
+    const progress = Math.min(increment * currentTime, target);
+    element.innerText = Math.floor(progress) + "%";
+
+    if (currentTime < duration) {
+      setTimeout(updateCount, 10); // Delay of 10 milliseconds
+    }
+  }
+
+  updateCount();
+}
+
+// Updated event listener to check if #skills section is in view
+window.addEventListener("scroll", function () {
+  const skillsSection = document.querySelector("#skills");
+  const skillsSectionRect = skillsSection.getBoundingClientRect();
+
+  if (skillsSectionRect.top < window.innerHeight && !bol) {
+    for (let j = 0; j < progText.length; j++) {
+      progText[j].innerText = 0;
+      progress[j].style.bottom = "100%";
+      progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
+
+      const target = parseInt(progText[j].dataset.count);
+      animateCounter(progText[j], target, 9000); // 3000 milliseconds (3 seconds) duration
+
+      bol = true;
+    }
+  }
+});
+
+// testimonial
+
+
+import testimonial from './../projectsData/testimonial.js';
+
+
+
+document.querySelector('#testimonial').innerHTML = `
+
+<h2 class=heading>
+My <span>Testimonial</span>
+</h2>
+
+<div class="owl-carousel owl-theme">
+
+${
+    testimonial.map(t=>(
+
+`        <div class="item slide">
+    <div class="slider-box">
+        <figure> <img src=${t.image} alt=""></figure>
+        <h1>${t.user}</h1><p>${t.description}</p>
+    </div>
+</div>`
+
+    )).join('')
+}
+
+
+</div>
 
 
 `
+
+
+// project
+
+import projects from '../projectsData/db.js';
+
+
+
+
+
+const categories = [...new Set(projects.map((project) => project.category)), "all"].sort();
+
+document.querySelector('#cateBtn').innerHTML = categories.map((category) => (
+    `
+        <button class="sparkle-button filter-button audioBtn ${category == 'all' ? 'active' : ''}" data-filter=${category}>
+        <span class=spark></span>
+        <span class=backdrop></span>
+        <svg class=sparkle viewBox="0 0 24 24" fill=none xmlns=http://www.w3.org/2000/svg>
+            <path
+                d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"
+                fill=black stroke=black stroke-linecap=round stroke-linejoin=round></path>
+            <path
+                d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"
+                fill=black stroke=black stroke-linecap=round stroke-linejoin=round></path>
+            <path
+                d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"
+                fill=black stroke=black stroke-linecap=round stroke-linejoin=round></path>
+        </svg>
+        <span class=text>${category}</span>
+    </button>
+        `
+)).join('');
+
+document.querySelector('.work-list').innerHTML = projects.map((project) => {
+    return (`
+            <div class="work menuIn  ${project.categoryClass}" key=${project.id}>
+                <img src="${project.image}" alt="${project.title}">
+                <div class="layer">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <a href=${project.link} target="_blank"></a>
+                </div>
+            </div>
+        `)
+}).join('');
+
+
+
+
+const buttonGroup = document.querySelector('.button-group');
+const filterButtons = buttonGroup.querySelectorAll('.filter-button');
+const categoryItems = document.querySelectorAll('.category-item');
+
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterValue = button.getAttribute('data-filter');
+
+        categoryItems.forEach(item => {
+            filterValue === 'all' || item.classList.contains(filterValue) ?
+                (item.style.display = 'block' )
+                : (item.style.display = 'none')
+        });
+
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
+
+// contact
+
+
+document.querySelector('#contact').innerHTML = `
+
+
+<form action="https://formspree.io/f/xbjenndd" id="contact-form" method="post">
+<h2 class=heading>Contact<span> Us</span></h2>
+<input type="name" id="name" name="name" placeholder="Your Name" required minlength=3
+    autocomplete=off autocapitalize=on>
+<input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="off">
+<input id="phone" type="number" name="number" placeholder="Your Number" required minlength="8" autocomplete="off">
+<textarea id="message" name="message" rows=4 placeholder="How can we help you?"
+    minlength=5></textarea>
+<button class="sbtn audioBtn" type=submit>
+    <strong>SEND</strong>
+    <div id=container-stars>
+        <div id=stars></div>
+    </div>
+    <div id=glow>
+        <div class=circle></div>
+        <div class=circle></div>
+    </div>
+</button>
+</form>
+
+
+<div class="solar-wrapper">
+<div class="solar-syst">
+    <div class="sun"></div>
+    <div class="mercury"></div>
+    <div class="venus"></div>
+    <div class="earth"></div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+    <div class="pluto"></div>
+    <div class="asteroids-belt"></div>
+</div>
+</div><!--solar-wrapper-->
+`
+
+
+// footer
+
+
+document.querySelector('#footer').innerHTML = `
+
+<a href="#home" class="to-top audioBtn">
+<img class=arrow src=./assets/imgs/top.png alt="">
+</a>
+<ul>
+<li>
+    <p>Copyright &copy; 2023 by <span> Arbab</span> | All Rights Reserved.</p>
+</li>
+<li>
+    <div class=footer-icons>
+        <a target=_blank
+            href="https://www.fiverr.com/arbabzafar4444?source=gig_page&gigs=slug%3Aconvert-psd-to-html-css-or-pdf-to-html%2Cpckg_id%3A1&ref=is_seller_online%3Atrue%7Cseller_location%3APK%7Cprogramming_language%3Ahtml_css%7Cseller_level%3Ana%7Cgig_price_range%3A1500%2C5000">
+            <img src=./assets/imgs/icons/footer_icons/fiverr_outline.png alt="">
+            <img src=./assets/imgs/icons/footer_icons/fiverr.png alt="">
+        </a>
+        <a target=_blank href="https://www.facebook.com/profile.php?id=100090373562700">
+            <img src=./assets/imgs/icons/footer_icons/facebook_ouline-min.png alt="">
+            <img src=./assets/imgs/icons/footer_icons/facebook-min.png alt="">
+        </a>
+        <a target=_blank href=https://www.instagram.com/arbab_zafar4 />
+        <img src=./assets/imgs/icons/footer_icons/instagram_ouline-min.png alt="">
+        <img src=./assets/imgs/icons/footer_icons/instagram-min.png alt="">
+        </a>
+        <a target=_blank href=https://www.linkedin.com/in/arbab-zafar-web-developer />
+        <img src=./assets/imgs/icons/footer_icons/linkedin_ouline-min.png alt="">
+        <img src=./assets/imgs/icons/footer_icons/linkedin-min.png alt="">
+        </a>
+        <a target=_blank href="https://github.com/SheikhArbab?tab=repositories">
+            <img src=./assets/imgs/icons/footer_icons/github_ouline-min.png alt="">
+            <img src=./assets/imgs/icons/footer_icons/github-min.png alt="">
+        </a>
+        <a target=_blank href=https://stackoverflow.com/users/21672375/arbab>
+            <img src=./assets/imgs/icons/footer_icons/stack-overflow_outline-min.png alt="">
+            <img src=./assets/imgs/icons/footer_icons/stack-overflow-min.png alt="">
+        </a>
+        <a target=_blank href=https://wa.me/03125305532>
+            <img src=./assets/imgs/icons/footer_icons/whatsapp_ouline-min.png alt="">
+            <img src=./assets/imgs/icons/footer_icons/whatsapp-min.png alt="">
+        </a>
+    </div>
+</li>
+</ul>
+
+
+`
+
+
+
+

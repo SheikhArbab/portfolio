@@ -1321,15 +1321,30 @@ strong {
     height: 120vh;
     padding: 20rem 10px;
     padding-left: 2rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .owl-carousel {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .owl-carousel .item {
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-item.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1371,15 +1386,14 @@ strong {
     box-shadow: 0 4px 30px rgba(42, 42, 42, 0.278);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.83);
+    border: 5px solid rgba(255, 255, 255, 0.83);
     position: relative;
     padding: 0px 40px 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    filter: drop-shadow(4px 0px 3px var(--pink));
-    box-shadow: 1.5px 1.5px 30px black;
+    box-shadow: 1.5px 1.5px 15px black;
 }
 
 .slide>.slider-box>h1 {
@@ -1404,7 +1418,7 @@ strong {
     top: -1%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 6px solid var(--secon_bg);
+    border: 6px solid white;
 }
 
 .slider-box>figure>img {
@@ -1425,7 +1439,7 @@ strong {
     background: url(../imgs/quote.png);
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(2px 2px 2px black);
 }
 
 .slide>.slider-box::after {
@@ -1439,7 +1453,7 @@ strong {
     background: url(../imgs/quote.png);
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(2px 2px 2px black);
     transform: rotate(180deg);
 }
 
@@ -1466,7 +1480,7 @@ strong {
 }
 
 .work-list {
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1718,7 +1732,7 @@ footer>ul>li>p:hover span {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--main_color);
+    background-color: var(--bg);
 
 }
 

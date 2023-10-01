@@ -66,8 +66,6 @@ window.addEventListener('load', function () {
 
 
 
-
-
         $(document).ready(() =>{
             $('.owl-carousel').owlCarousel({
                 loop:true,
