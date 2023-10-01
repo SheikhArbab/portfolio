@@ -4,35 +4,39 @@
 document.querySelector('#header').innerHTML = `
 
 <a href="./index.html" class="logo audioBtn">
-<img src="./assets/imgs/logo/arbab.png" class="audioBtn" alt="">
+<img src="https://drive.google.com/uc?id=1oP23kVvGk71_5oJHwyIEcx8ckst5GRzU
+" class="audioBtn" alt="">
 </a>
 
 <nav class="navbar menuIn ">
 <ul>
     <li class="list active">
         <a href="#home" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/home.png alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1veiUxvyJvaEDETAD6RkJ15Rnpj9bty7t
+            " alt=""></span>
             <span class="text">Home</span>
         
         </a>
     </li>
     <li class="list">
         <a href=#about class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/information-min.png alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1MFDltS0Zhm-A0YaS7tXp9bRQ2t4_vFr6"            alt=""></span>
             <span class="text">About</span>
         
         </a>
     </li>
     <li class="list">
         <a href="#skills" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/skill-min.png alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1hB4SueXMNjrLcSw1dEbLenCIzx7AJgOx
+            " alt=""></span>
             <span class="text">Skills</span>
         
         </a>
     </li>
     <li class="list">
         <a href="#testimonial" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/testimonial.png alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1bV0B2jFTjq4H57LG913tcb1u5hCHR15x
+            " alt=""></span>
             <span class="text">Testimonial</span>
         
         </a>
@@ -40,14 +44,16 @@ document.querySelector('#header').innerHTML = `
 
     <li class="list">
         <a href="#project" class="audioBtn">
-            <span class="icon"><img src=./assets/imgs/navicons/project-min.png alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1qjAxdPtF4Fx1CwCCsMfYG9leNWDaAHEu
+            " alt=""></span>
             <span class="text">Project</span>
         
         </a>
     </li>
     <li class="list">
         <a href="#contact" class="audioBtn">
-            <span class="icon"><img src="./assets/imgs/navicons/contact.png" alt=""></span>
+            <span class="icon"><img src="https://drive.google.com/uc?id=1SrmPsx2OwAoZEPTjOR0AOPYa_TxVEXvK
+            " alt=""></span>
             <span class="text">Contact</span>
         
         </a>
@@ -1593,7 +1599,8 @@ document.querySelector("#about").innerHTML = `
 
 <h2 class=heading>About <span>Me</span></h2>
 <div class=about-img>
-    <img src="./assets/imgs/arbab-profile.png" alt="">
+    <img src="https://drive.google.com/uc?id=1D5_8cj7Px6yPcIvndJ1LrXHjCwVR0_2T
+    " alt="">
     <span class=circle-spin></span>
 </div>
 <div class=about-content>
@@ -1926,7 +1933,8 @@ document.querySelector('#contact').innerHTML = `
 document.querySelector('#footer').innerHTML = `
 
 <a href="#home" class="to-top audioBtn">
-<img class=arrow src=./assets/imgs/top.png alt="">
+<img class=arrow src="https://drive.google.com/uc?id=1vb2tTrj6IOsFG82OtTok4xZHvYatpVbQ
+" alt="">
 </a>
 <ul>
 <li>
