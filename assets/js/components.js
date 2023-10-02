@@ -1,7 +1,4 @@
-
-
-// header
-document.querySelector('#header').innerHTML = `
+document.querySelector("#header").innerHTML=`
 
 <a href="./index.html" class="logo audioBtn">
 <img src="https://drive.google.com/uc?id=1oP23kVvGk71_5oJHwyIEcx8ckst5GRzU
@@ -70,16 +67,7 @@ document.querySelector('#header').innerHTML = `
 </label>
 
 
-`
-
-document.querySelector('.toggle').addEventListener('click', () => {
-    const navbar = document.querySelector('.navbar');
-    navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
-});
-
-
-// home
-document.querySelector('#home').innerHTML = `
+`,document.querySelector(".toggle").addEventListener("click",()=>{let _=document.querySelector(".navbar");_.style.display="block"===_.style.display?"none":"block"}),document.querySelector("#home").innerHTML=`
 
 
 <div class=home-content>
@@ -1587,13 +1575,7 @@ document.querySelector('#home').innerHTML = `
 </svg>
 </figure>
 
-`
-
-// about
-
-
-
-document.querySelector("#about").innerHTML = `
+`,document.querySelector("#about").innerHTML=`
 
 
 
@@ -1663,30 +1645,7 @@ document.querySelector("#about").innerHTML = `
 
 
 
-`;
-
-document.querySelector("#moreBtn").addEventListener("click", () => {
-  let dots = document.querySelector("#dots");
-  let moreText = document.querySelector("#more");
-  let btnText = document.querySelector("#moreBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-});
-
-
-
-// skills
-
-
-document.querySelector('#skills').innerHTML = `
+`,document.querySelector("#moreBtn").addEventListener("click",()=>{let _=document.querySelector("#dots"),$=document.querySelector("#more"),t=document.querySelector("#moreBtn");"none"===_.style.display?(_.style.display="inline",t.innerHTML="Read more",$.style.display="none"):(_.style.display="none",t.innerHTML="Read less",$.style.display="inline")}),document.querySelector("#skills").innerHTML=`
 
 <h2 class=heading>
 My <span>Skills</span>
@@ -1732,61 +1691,7 @@ My <span>Skills</span>
     </div>
     <h5>TAILWINDCSS</h5>
 </div>
-</div>`
-
-
-
-
-const progText = document.querySelectorAll(".progText");
-const progress = document.querySelectorAll(".progress");
-const progContainer = document.querySelectorAll(".pg-container");
-let bol = false;
-
-function animateCounter(element, target, duration) {
-  const start = 0;
-  const increment = (target / duration) * 10;
-  let currentTime = 0;
-
-  function updateCount() {
-    currentTime += 10;
-    const progress = Math.min(increment * currentTime, target);
-    element.innerText = Math.floor(progress) + "%";
-
-    if (currentTime < duration) {
-      setTimeout(updateCount, 10); // Delay of 10 milliseconds
-    }
-  }
-
-  updateCount();
-}
-
-// Updated event listener to check if #skills section is in view
-window.addEventListener("scroll", function () {
-  const skillsSection = document.querySelector("#skills");
-  const skillsSectionRect = skillsSection.getBoundingClientRect();
-
-  if (skillsSectionRect.top < window.innerHeight && !bol) {
-    for (let j = 0; j < progText.length; j++) {
-      progText[j].innerText = 0;
-      progress[j].style.bottom = "100%";
-      progress[j].style.bottom = progText[j].dataset.count - 100 + "%";
-
-      const target = parseInt(progText[j].dataset.count);
-      animateCounter(progText[j], target, 9000); // 3000 milliseconds (3 seconds) duration
-
-      bol = true;
-    }
-  }
-});
-
-// testimonial
-
-
-import testimonial from './../projectsData/testimonial.js';
-
-
-
-document.querySelector('#testimonial').innerHTML = `
+</div>`;let progText=document.querySelectorAll(".progText"),progress=document.querySelectorAll(".progress"),progContainer=document.querySelectorAll(".pg-container"),bol=!1;function animateCounter(_,$,t){let i=$/t*10,a=0;!function o(){a+=10;let n=Math.min(i*a,$);_.innerText=Math.floor(n)+"%",a<t&&setTimeout(o,10)}()}window.addEventListener("scroll",function(){let _=document.querySelector("#skills"),$=_.getBoundingClientRect();if($.top<window.innerHeight&&!bol)for(let t=0;t<progText.length;t++){progText[t].innerText=0,progress[t].style.bottom="100%",progress[t].style.bottom=progText[t].dataset.count-100+"%";let i=parseInt(progText[t].dataset.count);animateCounter(progText[t],i,9e3),bol=!0}});import _ from"./../projectsData/testimonial.js";document.querySelector("#testimonial").innerHTML=`
 
 <h2 class=heading>
 My <span>Testimonial</span>
@@ -1794,39 +1699,19 @@ My <span>Testimonial</span>
 
 <div class="owl-carousel owl-theme">
 
-${
-    testimonial.map(t=>(
-
-`        <div class="item slide">
+${_.map(_=>`        <div class="item slide">
     <div class="slider-box">
-        <figure> <img src=${t.image} alt=""></figure>
-        <h1>${t.user}</h1><p>${t.description}</p>
+        <figure> <img src=${_.image} alt=""></figure>
+        <h1>${_.user}</h1><p>${_.description}</p>
     </div>
-</div>`
-
-    )).join('')
-}
+</div>`).join("")}
 
 
 </div>
 
 
-`
-
-
-// project
-
-import projects from '../projectsData/db.js';
-
-
-
-
-
-const categories = [...new Set(projects.map((project) => project.category)), "all"].sort();
-
-document.querySelector('#cateBtn').innerHTML = categories.map((category) => (
-    `
-        <button class="sparkle-button filter-button audioBtn ${category == 'all' ? 'active' : ''}" data-filter=${category}>
+`;import $ from"../projectsData/db.js";let categories=[...new Set($.map(_=>_.category)),"all"].sort();document.querySelector("#cateBtn").innerHTML=categories.map(_=>`
+        <button class="sparkle-button filter-button audioBtn ${"all"==_?"active":""}" data-filter=${_}>
         <span class=spark></span>
         <span class=backdrop></span>
         <svg class=sparkle viewBox="0 0 24 24" fill=none xmlns=http://www.w3.org/2000/svg>
@@ -1840,52 +1725,18 @@ document.querySelector('#cateBtn').innerHTML = categories.map((category) => (
                 d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"
                 fill=black stroke=black stroke-linecap=round stroke-linejoin=round></path>
         </svg>
-        <span class=text>${category}</span>
+        <span class=text>${_}</span>
     </button>
-        `
-)).join('');
-
-document.querySelector('.work-list').innerHTML = projects.map((project) => {
-    return (`
-            <div class="work menuIn  ${project.categoryClass}" key=${project.id}>
-                <img src="${project.image}" alt="${project.title}">
+        `).join(""),document.querySelector(".work-list").innerHTML=$.map(_=>`
+            <div class="work menuIn  ${_.categoryClass}" key=${_.id}>
+                <img src="${_.image}" alt="${_.title}">
                 <div class="layer">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <a href=${project.link} target="_blank"></a>
+                    <h3>${_.title}</h3>
+                    <p>${_.description}</p>
+                    <a href=${_.link} target="_blank"></a>
                 </div>
             </div>
-        `)
-}).join('');
-
-
-
-
-const buttonGroup = document.querySelector('.button-group');
-const filterButtons = buttonGroup.querySelectorAll('.filter-button');
-const categoryItems = document.querySelectorAll('.category-item');
-
-
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filterValue = button.getAttribute('data-filter');
-
-        categoryItems.forEach(item => {
-            filterValue === 'all' || item.classList.contains(filterValue) ?
-                (item.style.display = 'block' )
-                : (item.style.display = 'none')
-        });
-
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-    });
-});
-
-
-// contact
-
-
-document.querySelector('#contact').innerHTML = `
+        `).join("");let buttonGroup=document.querySelector(".button-group"),filterButtons=buttonGroup.querySelectorAll(".filter-button"),categoryItems=document.querySelectorAll(".category-item");filterButtons.forEach(_=>{_.addEventListener("click",()=>{let $=_.getAttribute("data-filter");categoryItems.forEach(_=>{"all"===$||_.classList.contains($)?_.style.display="block":_.style.display="none"}),filterButtons.forEach(_=>_.classList.remove("active")),_.classList.add("active")})}),document.querySelector("#contact").innerHTML=`
 
 
 <form action="https://formspree.io/f/xbjenndd" id="contact-form" method="post">
@@ -1924,13 +1775,7 @@ document.querySelector('#contact').innerHTML = `
     <div class="asteroids-belt"></div>
 </div>
 </div><!--solar-wrapper-->
-`
-
-
-// footer
-
-
-document.querySelector('#footer').innerHTML = `
+`,document.querySelector("#footer").innerHTML=`
 
 <a href="#home" class="to-top audioBtn">
 <img class=arrow src="https://drive.google.com/uc?id=1vb2tTrj6IOsFG82OtTok4xZHvYatpVbQ
@@ -1976,8 +1821,4 @@ document.querySelector('#footer').innerHTML = `
 </ul>
 
 
-`
-
-
-
-
+`;
