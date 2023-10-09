@@ -1654,22 +1654,22 @@ My <span>Skills</span>
 <div class=progress-card>
     <div class=progress-circle>
         <div class=progress-content>
-            <h5 class=progText data-count=90>0</h5>
+            <h5 class=progText data-count="90">0</h5>
         </div>
         <div class=progress>
         </div>
     </div>
-    <h5>HTML/CSS</h5>
+    <h5>Graphic Designing</h5>
 </div>
 <div class=progress-card>
     <div class=progress-circle>
         <div class=progress-content>
-            <h5 class=progText data-count=30>0</h5>
+            <h5 class=progText data-count="75">0</h5>
         </div>
         <div class=progress>
         </div>
     </div>
-    <h5>JAVA SCRIPT</h5>
+    <h5>MERN Stack</h5>
 </div>
 <div class=progress-card>
     <div class=progress-circle>
