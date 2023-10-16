@@ -1,7 +1,15 @@
 const projects = [
 
     {
-        id: 1,
+        title: "S.A.J Holding Portfolio",
+        description: "S.A.J Holding Portfolio that I made using HTML5 css3 and js.",
+        category: "website",
+        image: "https://drive.google.com/uc?id=142o-UkJxWYCRVix11OZGjJoweOsBrgwy",
+        link: "https://sheikharbab.github.io/runningGame/",
+        categoryClass: "category-item all website"
+    },
+
+    {
         title: "Portfolio",
         description: "Photography that I made using HTML5 css3 and js.",
         category: "website",
@@ -11,7 +19,6 @@ const projects = [
     },
 
     {
-        id: 2,
         title: "Portfolio",
         description: "Portfolio that I made myself using HTML5 css3 and js.",
         category: "website",
@@ -21,7 +28,6 @@ const projects = [
     },
 
     {
-        id: 3,
         title: "NFT's ",
         description: "I converted the img file into a functional website using HTML CSS and JS",
         category: "website",
@@ -31,7 +37,6 @@ const projects = [
     },
 
     {
-        id: 4,
         title: "portfolio",
         description: "This is my portfolio that I made myself using HTML5 css3 and js.",
         category: "website",
@@ -41,7 +46,6 @@ const projects = [
     },
 
     {
-        id: 5,
         title: "Real Estate",
         description: "I converted the img file into a functional website using HTML and CSS.",
         category: "website",
@@ -53,7 +57,6 @@ const projects = [
 
 
     {
-        id: 7,
         title: "Microsoft home page clone ",
         description: "I cloned this website using html css js and bootstrape.",
         category: "website",
@@ -63,7 +66,6 @@ const projects = [
     },
 
     {
-        id: 8,
         title: "Kindori ",
         description: "I cloned this website using html css js and bootstrape.",
         category: "website",
@@ -73,7 +75,6 @@ const projects = [
     },
 
     {
-        id: 9,
         title: "TransitFlow",
         description: "I converted the Figma file into a functional website using HTML CSS JS and Bootstrap.",
         category: "website",
@@ -83,7 +84,6 @@ const projects = [
     },
 
     {
-        id: 10,
         title: "Banking ",
         description: "I converted the Figma file into a functional website using HTML CSS JS and Tailwindcss..",
         category: "website",
@@ -93,7 +93,6 @@ const projects = [
     },
 
     {
-        id: 11,
         title: "ARBAB game ",
         description: "I converted the img file into a functional website using TAILWINDCSS HTML CSS and JS",
         category: "website",
@@ -104,7 +103,6 @@ const projects = [
 
 
     {
-        id: 12,
         title: "View",
         description: "School post with mockup",
         category: "graphic",
@@ -114,7 +112,6 @@ const projects = [
     },
 
     {
-        id: 13,
         title: "View",
         description: "Social media add",
         category: "graphic",
@@ -124,7 +121,6 @@ const projects = [
     },
 
     {
-        id: 14,
         title: "View",
         description: "Sprite post manipulation using photoshop",
         category: "graphic",
@@ -134,7 +130,6 @@ const projects = [
     },
 
     {
-        id: 15,
         title: "View",
         description: "Turn Day into Night in Photoshop",
         category: "graphic",
@@ -143,7 +138,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 16,
         title: "View",
         description: "Orange manipulation",
         category: "graphic",
@@ -152,7 +146,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 17,
         title: "View",
         description: "Shopping sale post with mockup",
         category: "graphic",
@@ -161,7 +154,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 18,
         title: "View",
         description: "Nike shoes particle effect manipulation",
         category: "graphic",
@@ -170,7 +162,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 19,
         title: "View",
         description: "Social Media Post",
         category: "graphic",
@@ -179,7 +170,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 20,
         title: "View",
         description: "Nike branding with mockup",
         category: "graphic",
@@ -188,7 +178,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 21,
         title: "View",
         description: "Fiverr gig",
         category: "graphic",
@@ -197,7 +186,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 22,
         title: "View",
         description: "Neon effect",
         category: "graphic",
@@ -206,7 +194,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 23,
         title: "View",
         description: "Custom GYM poster",
         category: "graphic",
@@ -215,7 +202,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 24,
         title: "View",
         description: "Manipulation",
         category: "graphic",
@@ -224,7 +210,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 25,
         title: "View",
         description: "Custom Gamming Poster",
         category: "graphic",
@@ -233,7 +218,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 26,
         title: "View",
         description: "fiverr gig",
         category: "graphic",
@@ -242,7 +226,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 27,
         title: "View",
         description: "Instagram post",
         category: "graphic",
@@ -251,7 +234,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 28,
         title: "View",
         description: "Instagram post",
         category: "graphic",
@@ -260,7 +242,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 29,
         title: "View",
         description: "YouTube fully responsive banner",
         category: "graphic",
@@ -269,7 +250,6 @@ const projects = [
         categoryClass: "category-item all graphic"
     },
     {
-        id: 30,
         title: "Nike react app",
         description: "Nike React app useing html css js react formik yup and more...",
         category: "web app",
@@ -279,4 +259,38 @@ const projects = [
     },
 ]
 
-export default projects
+
+
+const testimonial = [
+
+    {
+        user: "Adam",
+        description: "An exceptional individual who effortlessly fulfilled all our requirements. The design was promptly delivered, showcasing a sleek and contemporary style. Highly recommended, and definitely my go-to for upcoming pages and projects!",
+        image: "https://drive.google.com/uc?id=1Fzis--s8l0kIt8eo9oLtnMy545C43BPH",
+    },
+    {
+        user: "faizan saeed",
+        description: "Great man and got everything done the way we wanted it, the designed was quick to be delivered as well as delivering a clean modern designed for me. will recommend and will keep using him for future pages and projects.",
+        image: "https://drive.google.com/uc?id=1XaJhjiTTnbaGVteHbgVMzdAUwDo2Tl8B",
+    },
+    {
+        user: "senan ahmad",
+        description: "5 stars service. Arbab is very communicative and detail oriented. He designed the website I requested in one week and even though my content was not ready all together, he was patient and worked with me step by step. I asked him to revisions few times and he took care of it in timely manner. I would definitely recommend him.Photography that I made using HTML5 css3 and js.",
+        image: `https://drive.google.com/uc?id=1KANlJeDgfddu49STgl1TpIVp9ErVMarN
+        `,
+    },
+    {
+        user: "husnain abbas",
+        description: "Wow. What an awesome experience working with Arbab. He was patient with each request I had. He went above my expectations wit me the design and content of the website. I highly recommend his services!",
+        image: `https://drive.google.com/uc?id=1RFXT0-2H_rlYAgeU1p9Hoe-0QArfpTpT
+        `,
+    },
+    {
+        user: "bilawal",
+        description: "Great work and great communication!! Very professional and fast, I highly recommend",
+        image: `https://drive.google.com/uc?id=1qhJUVlav_rvFHIxMvKX3m1U29PJ_vVSG
+        `,
+    },
+]
+
+export { projects, testimonial };
