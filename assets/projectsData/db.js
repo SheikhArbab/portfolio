@@ -265,7 +265,7 @@ const testimonial = [
 
     {
         user: "Adam",
-        description: "An exceptional individual who effortlessly fulfilled all our requirements. The design was promptly delivered, showcasing a sleek and contemporary style. Highly recommended, and definitely my go-to for upcoming pages and projects!",
+        description: "amazing and awesome service he us right on it and price is reasonable.",
         image: "https://drive.google.com/uc?id=1Fzis--s8l0kIt8eo9oLtnMy545C43BPH",
     },
     {
