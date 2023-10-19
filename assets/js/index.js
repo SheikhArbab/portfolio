@@ -128,12 +128,12 @@ let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
             document.querySelector(".work-list").innerHTML = projects
                 .map(
                     (_) => `
-                        <div class="work menuIn  ${_.categoryClass}" key=${_.id}>
+                        <div class="work menuIn  ${_.categoryClass}">
                             <img src="${_.image}" alt="${_.title}">
                             <div class="layer">
                                 <h3>${_.title}</h3>
                                 <p>${_.description}</p>
-                                <a href=${_.link} target="_blank"></a>
+                                <a href=${_.link} target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                             </div>
                         </div>
                     `
