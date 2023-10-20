@@ -3,7 +3,7 @@
     --secon_bg: #112e42;
     --main_color: #00abf0;
     --text_color: #ededed;
-    --pink: #b721d1
+    --pink: #b721d1;
 }
 
 * {
@@ -591,8 +591,9 @@ section {
     height: fit-content;
     padding-top: 16em;
     padding-left: 4rem;
-    justify-content: space-between
+    justify-content: space-between;
 }
+
 
 .home .space {
     width: 510px;
@@ -764,10 +765,10 @@ section {
     justify-content: center;
     display: flex;
     margin-right: 14px;
-    transition: all .2s ease;
+    transition: all .6s ease-in-out;
 }
 .home-icons a:hover{
-   background-color: var(--main_color);
+   background: linear-gradient(-45deg, var(--pink), var(--main_color));
 }
 .home-icons a > i{
    color:white;
@@ -784,7 +785,7 @@ section {
     gap: 2rem;
     background: var(--secon_bg);
     padding: 10em;
-    height: fit-content
+    height: fit-content;
 }
 
 .heading {
@@ -880,7 +881,17 @@ span {
     font-weight: 700;
     font-size: 14px;
     color: var(--pink);
+    z-index: 10;
 }
+.about-svg{
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    /* mix-blend-mode: multiply; */
+}
+
 
 /* ////////////////////about//////////////////////////////// */
 
@@ -1134,10 +1145,11 @@ strong {
     background-color: transparent !important;
     font-size: 90px !important;
     top: 50%;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    filter: drop-shadow(2px 2px 2px var(--pink));
 }
 
 .slide>.slider-box::after,
@@ -1225,7 +1237,8 @@ strong {
 
 .slide>.slider-box>h1 {
     font-size: 250%;
-    text-transform: capitalize
+    text-transform: capitalize;
+    filter: drop-shadow(2px 1px 1px black);
 }
 
 .slide>.slider-box>p {
@@ -1234,15 +1247,16 @@ strong {
     width: 100%;
     overflow: hidden;
     overflow-y: auto;
+    filter: drop-shadow(2px 1px 2px black);
 }
 
 .slider-box>figure {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: -1%;
+    top: -2%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 6px solid #fff
@@ -1720,6 +1734,7 @@ form button {
     border-radius: 16px !important
 }
 
+
 /* -------------------contact----------------- */
 
 /* -------------------footer----------------- */
@@ -1781,10 +1796,10 @@ footer>ul>li>p:hover span {
     justify-content: center;
     display: flex;
     margin-right: 14px;
-    transition: all .2s ease;
+    transition: all 1s ease-in-out;
 }
 .footer-icons a:hover{
-   background-color: var(--main_color);
+    background: linear-gradient(-45deg, var(--pink), var(--main_color));
 }
 .footer-icons a > i{
    color:white;

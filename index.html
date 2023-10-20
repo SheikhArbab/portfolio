@@ -47,9 +47,9 @@
 </head>
 <body>
     <div id="root">
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div id="loading"></div>
-        </div>
+        </div> -->
         <header id="header" class="header ">
         
 
@@ -116,7 +116,7 @@
         </header>
         <main>
             <section id="home" class="home"> 
-
+            
                 <div class="home-content">
                     <h1><span class=stroke>Assalamu alaikum</span> I'm <span class="auto-type">Arbab</span></h1>
                     <p> Are you in need of a skilled and enthusiastic front-end web developer for your next website or
@@ -1633,7 +1633,7 @@
                     <h3>Arbab Zafar</h3>
                     <p>🌟 Arbab Zafar: A Multifaceted Creative in the World of Design and Development
                 
-                    Meet Arbab Zafar, a talented graphic designer and frontend web developer who has mastered a diverse array of tools and technologies to craft stunning digital experiences. With expertise in HTML, CSS, JavaScript, React.js, Formik, Yup, Redux, animation, Tailwind CSS, and Bootstrap, Arbab is a true virtuoso of the digital realm. <span id=dots>...</span><span id=more> 
+                    Meet Arbab Zafar, a talented graphic designer and frontend web developer who has mastered a diverse array of tools and technologies to craft stunning digital experiences. With expertise in HTML, CSS, JavaScript, React.js, Formik, Yup, Redux, animation, Tailwind CSS, and Bootstrap, Arbab is a true virtuoso of the digital realm. <span id="dots">...</span><span id="more"> 
                     
                     🎨 Designing Visual Wonders
                 
@@ -1684,9 +1684,7 @@
                         <button  class="btn audioBtn" id="moreBtn">Read more</button>
                     </div>
                 </div>
-                
-                
-                
+            
             </section>
             <section class="skills" id="skills">
                 
@@ -1748,26 +1746,34 @@
 
                 
 
-
-<form action="https://formspree.io/f/xbjenndd" id="contact-form" method="post">
-    <h2 class=heading>Contact<span> Us</span></h2>
-    <input type="name" id="name" name="name" placeholder="Your Name" required minlength=3
-        autocomplete=off autocapitalize=on>
-    <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="off">
-    <input id="phone" type="number" name="number" placeholder="Your Number" required minlength="8" autocomplete="off">
-    <textarea id="message" name="message" rows=4 placeholder="How can we help you?"
-        minlength=5></textarea>
-    <button class="sbtn audioBtn" type="submit">
-        <strong>SEND</strong>
-        <div id=container-stars>
-            <div id=stars></div>
-        </div>
-        <div id="glow">
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </button>
-    </form>
+                <form action="https://formspree.io/f/xbjenndd" id="contact-form" method="post">
+                    <h2 class="heading">Contact<span> Us</span></h2>
+                    
+                    <input type="text" id="name" name="name" placeholder="Your Name" required minlength="3" autocomplete="off" autocapitalize="on">
+                 
+                    
+                    <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="off">
+                   
+                    
+                    <input id="phone" type="tel" name="phone" placeholder="Your Number" required minlength="8" autocomplete="off">
+                  
+                    
+                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" minlength="5"></textarea>
+                  
+                    
+                    <button class="sbtn audioBtn" type="submit">
+                        <strong>SEND</strong>
+                        <div id="container-stars">
+                            <div id="stars"></div>
+                        </div>
+                        <div id="glow">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </button>
+                </form>
+            
+                
     
     
     <div class="solar-wrapper">

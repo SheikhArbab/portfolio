@@ -96,13 +96,21 @@ ${testimonial
 
 </div>`;
 
+function generateSlug(text) {
+    return text.toString().toLowerCase().trim()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\-]+/g, '')       // Remove non-word characters
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start of text
+        .replace(/-+$/, '');            // Trim - from end of text
+}
 
 
 let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
 (document.querySelector("#cateBtn").innerHTML = categories
     .map(
         (_) => `
-        <button class="sparkle-button filter-button audioBtn ${"all" == _ ? "active" : ""}" data-filter=${_}>
+        <a href="#category-${generateSlug(_)}" class="sparkle-button filter-button audioBtn ${"all" == _ ? "active" : ""}" data-filter=${_}>
         <span class=spark></span>
         <span class=backdrop></span>
         <svg class=sparkle viewBox="0 0 24 24" fill=none xmlns=http://www.w3.org/2000/svg>
@@ -117,17 +125,17 @@ let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
                 fill=black stroke=black stroke-linecap=round stroke-linejoin=round></path>
         </svg>
         <span class=text>${_}</span>
-    </button>
+    </a>
         `
     )
     .join(""))
 
-    const projectData = () => {
-        console.log('fun call');
-        if (window.scrollY > 1000) {
-            document.querySelector(".work-list").innerHTML = projects
-                .map(
-                    (_) => `
+const projectData = () => {
+    console.log('fun call');
+    if (window.scrollY > 1000) {
+        document.querySelector(".work-list").innerHTML = projects
+            .map(
+                (_) => `
                         <div class="work menuIn  ${_.categoryClass}">
                             <img src="${_.image}" alt="${_.title}">
                             <div class="layer">
@@ -137,27 +145,91 @@ let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
                             </div>
                         </div>
                     `
-                )
-                .join("");
-    
-            let buttonGroup = document.querySelector(".button-group"),
-                filterButtons = buttonGroup.querySelectorAll(".filter-button"),
-                categoryItems = document.querySelectorAll(".category-item");
-    
-            filterButtons.forEach((_) => {
-                _.addEventListener("click", () => {
-                    let $ = _.getAttribute("data-filter");
-                    categoryItems.forEach((_) => {
-                        "all" === $ || _.classList.contains($) ? (_.style.display = "block") : (_.style.display = "none");
-                    });
-                    filterButtons.forEach((_) => _.classList.remove("active"));
-                    _.classList.add("active");
+            )
+            .join("");
+
+        let buttonGroup = document.querySelector(".button-group"),
+            filterButtons = buttonGroup.querySelectorAll(".filter-button"),
+            categoryItems = document.querySelectorAll(".category-item");
+
+        filterButtons.forEach((_) => {
+            _.addEventListener("click", () => {
+                let $ = _.getAttribute("data-filter");
+                categoryItems.forEach((_) => {
+                    "all" === $ || _.classList.contains($) ? (_.style.display = "block") : (_.style.display = "none");
                 });
+                filterButtons.forEach((_) => _.classList.remove("active"));
+                _.classList.add("active");
             });
-    
-            window.removeEventListener('scroll', projectData);
+        });
+
+        window.removeEventListener('scroll', projectData);
+    }
+}
+
+window.addEventListener('scroll', projectData);
+
+
+// form  
+document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+
+        if (!validateName(name) || !validateEmail(email) || !validatePhone(phone) || !validateMessage(message)) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+
+    // Real-time validation for the email field
+    var emailInput = document.getElementById('email');
+    emailInput.addEventListener('input', function () {
+        var email = emailInput.value;
+        var emailError = document.getElementById('email-error');
+
+        if (!validateEmail(email)) {
+            emailError.textContent = 'Invalid email address';
+        } else {
+            emailError.textContent = '';
+        }
+    });
+
+    // Other validation functions remain the same
+
+    function validateName(name) {
+        var nameError = document.getElementById('name-error');
+        if (name.length < 3) {
+            nameError.textContent = 'Name must be at least 3 characters';
+            return false;
+        } else {
+            nameError.textContent = '';
+            return true;
         }
     }
-    
-    window.addEventListener('scroll', projectData);
-    
+
+    function validatePhone(phone) {
+        var phoneError = document.getElementById('phone-error');
+        if (phone.length < 8 || isNaN(phone)) {
+            phoneError.textContent = 'Invalid phone number';
+            return false;
+        } else {
+            phoneError.textContent = '';
+            return true;
+        }
+    }
+
+    function validateMessage(message) {
+        var messageError = document.getElementById('message-error');
+        if (message.length < 10) {
+            messageError.textContent = 'Message must be at least 10 characters';
+            return false;
+        } else {
+            messageError.textContent = '';
+            return true;
+        }
+    }
+});
