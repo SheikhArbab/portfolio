@@ -573,6 +573,156 @@ body {
 
 /* -------------------hero----------------- */
 
+.ufo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    animation: fly 5s infinite;
+    background:red;
+    width: 100dvw;
+  }
+  
+  /*UFO parts*/
+  .ufo {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 87.5px;
+    background: #898988;
+    border-radius: 50%;
+
+  }
+  
+  .ufo-underside {
+    position: absolute;
+    top: 5px;
+    width: 200px;
+    height: 87.5px;
+    background: #414141;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .ufo-top {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    height: 87.5px;
+    width: 137.5px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 30% 30%;
+    border-bottom: 8px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  
+  @keyframes fly {
+      50% {
+        transform: translate(50px,0) rotate(0);
+      }
+      
+      33% {
+        transform: translate(50px, 50px);
+      }
+      
+      66% {
+        transform: translate(0, 50px);
+      }
+      
+      100% {
+        transform: translate(0,0) rotate(0);
+      }
+    }
+  
+  .ufo-inner {
+      position: absolute;
+      top: 10px;
+      background: black;
+      left: 50%;
+      transform: translate(-50%);
+      width: 95px;
+      height: 30px;
+      border-radius: 50%;
+    } 
+  
+  .ufo::before {
+    content: "";
+    left: 25px;
+    bottom: 35px;
+    position: absolute;
+    width: 20px;
+    height: 12.5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-bottom: 2px solid black;
+  }
+  
+  .ufo::after {
+    content: "";
+    right: 25px;
+    bottom: 35px;
+    position: absolute;
+    width: 20px;
+    height: 12.5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-bottom: 2px solid black;
+  }
+  
+  .center-dot {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 12.5px;
+    background:rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-bottom: 2px solid black;
+    bottom: 12.5px;
+    z-index: 1;
+  }
+  
+  /*Beam*/
+  .beam {
+      position: absolute;
+      top: 107.5px;
+      height: 250px;
+      width: 150px;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      z-index: -2;
+    }
+  
+  .beam::before {
+      content: '';
+      position: absolute;
+      height: 250px;
+      width: 150px;
+      background: linear-gradient(to bottom,
+       var(--pink),
+       #4708537b
+      );
+      animation: beamIn 5s infinite;
+    }
+  
+    @keyframes beamIn {
+      0% {
+        transform: translateY(-300px);
+      }
+      
+      50% {
+         transform: translateY(0);
+      }
+      
+      100% {
+        transform: translateY(-500px);
+      }
+    }
+
+
 .home,
 .water-btn {
     overflow: hidden
@@ -1697,7 +1847,7 @@ input[type=number] {
 form {
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
+    padding: 3vw 4vw;
     width: 90%;
     max-width: 600px;
     background: 0 0;
@@ -1961,6 +2111,30 @@ footer>ul>li>p:hover span {
         width: 80vw;
         padding-top: 50px
     }
+
+    .contact .heading {
+        font-size: 30px;
+}
+
+form {
+    width: 80dvw;
+    padding: 30px 10px;
+}
+
+form :is(input, textarea) {
+    padding: 14px;
+    font-size: 10px;
+    margin: 8px 0;
+}
+
+form button {
+    padding: 10px;
+    font-size: 10px;
+    width: 150px;
+    margin: 10px auto 0;
+}
+
+
 }
 
 @media (max-width:767.98px) {
