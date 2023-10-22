@@ -29,9 +29,9 @@ window.addEventListener("scroll", function () {
 }),
     window.addEventListener("load", function () {
         let e = document.querySelector("#preloader");
-        setTimeout(function () {
-            e.style.height = "0";
-        }, 100);
+        let _ = document.querySelector("body");
+        e.style.height = "0";
+        _.style.overflow = 'auto'
     }),
     $(document).ready(() => {
         $(".owl-carousel").owlCarousel({ loop: !0, margin: 10, nav: !0, responsive: { 0: { items: 1 }, 930: { items: 2 }, 1200: { items: 3 } } });
