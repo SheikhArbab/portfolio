@@ -24,7 +24,7 @@ html {
 body {
     background-color: var(--bg);
     color: var(--text_color);
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -2196,7 +2196,13 @@ form button {
 /* -------------------contact----------------- */
 
 /* -------------------footer----------------- */
-footer {
+footer{
+    width: 100dvw;
+}
+footer > img{
+    width: 100%;
+}
+.footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -2206,7 +2212,7 @@ footer {
     box-shadow: inset 0 0 10px 0 #000
 }
 
-footer ul {
+.footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2214,11 +2220,11 @@ footer ul {
     width: 100%
 }
 
-footer>ul>li>p>span {
+.footer>ul>li>p>span {
     color: var(--text_color)
 }
 
-footer>ul>li>p:hover span {
+.footer>ul>li>p:hover span {
     color: var(--main_color);
     transform: scale(1, 1)
 }
@@ -2422,6 +2428,10 @@ footer>ul>li>p:hover span {
 
     .contact .heading {
         font-size: 30px;
+}
+
+.sparkle-button {
+    font-size: .7rem;
 }
 
 form {
