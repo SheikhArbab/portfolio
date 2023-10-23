@@ -24,7 +24,7 @@ html {
 body {
     background-color: var(--bg);
     color: var(--text_color);
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 
