@@ -8,7 +8,7 @@ function activeLink() {
     list.forEach((e) => e.classList.remove("active")), this.classList.add("active");
 }
 list.forEach((e) => e.addEventListener("click", activeLink));
-var typed = new Typed(".auto-type", { strings: ["Arbab Zafar", "Frontend Developer", "Graphic Designer", "Student", "Freelancer"], typeSpeed: 12, backSpeed: 8, loop: !0 });
+var typed = new Typed(".auto-type", { strings: ["Arbab Zafar", "MERN Developer", "Graphic Designer", "Student", "Freelancer"], typeSpeed: 12, backSpeed: 8, loop: !0 });
 const sections = document.querySelectorAll("section"),
     navLi = document.querySelectorAll("nav ul li");
 window.addEventListener("scroll", () => {
@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
         _.style.overflow = 'auto'
     }),
     $(document).ready(() => {
-        $(".owl-carousel").owlCarousel({ loop: !0, margin: 10, nav: !0, responsive: { 0: { items: 1 }, 930: { items: 2 }, 1200: { items: 3 } } });
+        $(".owl-carousel").owlCarousel({ loop: !0, margin: 10, autoplay: true, autoplayTimeout: 2000, nav: !0, responsive: { 0: { items: 1 }, 930: { items: 2 }, 1200: { items: 3 } } });
     });
 
 
@@ -86,8 +86,10 @@ ${testimonial
         .map(
             (_) => `        <div class="item slide">
     <div class="slider-box">
-        <figure> <img src=${_.image} alt=""></figure>
-        <h1>${_.user}</h1><p>${_.description}</p>
+    <figure> <img src=${_.image} alt=""></figure>
+    <h1>${_.user}</h1><p>${_.description}</p>
+    <i class="fa-solid fa-quote-left"></i>
+    <i class="fa-solid fa-quote-right"></i>
     </div>
 </div>`
         )

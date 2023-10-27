@@ -453,7 +453,8 @@ body {
     white-space: nowrap;
     border-radius: 100px;
     position: relative;
-    transition: .3s
+    transition: .3s;
+    margin: 4px;
 }
 
 .sparkle-button:active {
@@ -1610,16 +1611,7 @@ strong {
     filter: drop-shadow(2px 2px 2px var(--pink));
 }
 
-.slide>.slider-box::after,
-.slide>.slider-box::before {
-    position: absolute;
-    display: block;
-    content: '';
-    height: 10%;
-    width: 10%;
-    background: url('https://drive.google.com/uc?id=1KrhkcbiZdIuOJDRckrcyWnjL3PtjDfP8') 0 0/contain no-repeat;
-    filter: drop-shadow(2px 2px 2px black)
-}
+
 
 .testimonial {
     background-color: var(--secon_bg);
@@ -1698,6 +1690,21 @@ strong {
     text-transform: capitalize;
     filter: drop-shadow(2px 1px 1px black);
 }
+.slide > .slider-box .fa-quote-right,.slide > .slider-box .fa-quote-left {
+    font-size: 250%;
+    color: var(--pink);
+    position: absolute;
+    filter: drop-shadow(3px 1px 1px black);
+}
+
+.slide > .slider-box .fa-quote-right{
+bottom: 19%;
+right: 10%;
+}
+.slide > .slider-box .fa-quote-left{
+top: 19%;
+left: 10%;
+}
 
 .slide>.slider-box>p {
     font-size: 150%;
@@ -1706,6 +1713,7 @@ strong {
     overflow: hidden;
     overflow-y: auto;
     filter: drop-shadow(2px 1px 2px black);
+    text-transform: capitalize;
 }
 
 .slider-box>figure {
@@ -1752,7 +1760,7 @@ strong {
     align-items: center;
     flex-direction: column;
     padding: 10rem 3rem 0;
-    height: 100vh
+    height: 110vh
 }
 
 .work img,
@@ -1767,7 +1775,11 @@ strong {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    box-shadow: inset var(--main_color) 0px 50px 100px -20px, var(--main_color) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px ;
+    padding: 20px 0;
+    border-radius: 25px;
 }
 
 .layer,
@@ -2431,7 +2443,7 @@ footer > img{
 }
 
 .sparkle-button {
-    font-size: .7rem;
+    font-size: 1rem;
 }
 
 form {
