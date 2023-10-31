@@ -676,10 +676,6 @@ body {
     }
 }
 
-.logo img {
-    width: 100px
-}
-
 #checkbox,
 .dropdown {
     display: none
@@ -1749,6 +1745,9 @@ left: 10%;
 /* -------------------testimonial----------------- */
 
 /* -------------------projects----------------- */
+
+
+
 .layer a,
 .work {
     position: relative
@@ -2211,9 +2210,7 @@ form button {
 footer{
     width: 100dvw;
 }
-footer > img{
-    width: 100%;
-}
+
 .footer {
     display: flex;
     align-items: center;
@@ -2277,11 +2274,18 @@ footer > img{
 .footer-icons a:hover{
     background: linear-gradient(-45deg, var(--pink), var(--main_color));
 }
-.footer-icons a > i{
+.footer-icons a > i , .footer-icons a > p{
    color:white;
    font-size: 120%;
 }
-
+.footer-icons a > p {
+    font-size: 165%;
+    font-weight: bold;
+}
+.footer-icons a > p span{
+    color:white;
+    margin-left: 1.3px;
+}
 /* -------------------footer----------------- */
 
 
@@ -2289,30 +2293,100 @@ footer > img{
 /* -------------------scroll_btn----------------- */
 .to-top {
     position: fixed;
-    background: linear-gradient(90deg, var(--main_color), var(--pink));
-    border-radius: 50%;
     right: 32px;
     bottom: 100px;
     opacity: 0;
-    pointer-events: none;
     transition: .4s;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1111;
-    box-shadow: inset 0 0 10px 0 #000, 0 0 30px 0 rgba(0, 0, 0, .598);
-    font-size: 15px;
-    width: 40px;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
+}
+.to-top:hover{
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+    
+}
+.to-top i:first-child {
+    transform: rotate(-90deg);
+    filter:drop-shadow( 1px 2px 3px black);
+font-size: 30px;
+color: var(--main_color);
+}
+.to-top i:nth-child(2){
+    transform: rotate(-180deg);
+    filter:drop-shadow( 1px 2px 3px black);
+font-size: 18px;
+color: var(--pink);
+position: absolute;
+bottom: -25px;
+opacity: 0;
+}
+.to-top:hover i:nth-child(2){
+opacity: 1;
 }
 
 .to-top.active {
-    bottom: 10%;
+    bottom: 15%;
     pointer-events: auto;
     opacity: 1
 }
 
-
+@-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
 
 /* ----------------custom-scroll-bar------------------ */
 ::-webkit-scrollbar {
@@ -2492,6 +2566,9 @@ form button {
         margin: 6px 4px;
         width: 30px;
         height:30px;
+    }
+    .footer-icons a > p {
+        font-size: 150%;
     }
 
     .footer-icons {
