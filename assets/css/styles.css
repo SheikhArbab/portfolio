@@ -946,7 +946,8 @@ body {
 .ufo-inner {
     position: absolute;
     top: 10px;
-    background: black;
+    background: var(--main_color);
+    filter: blur(10px);
     left: 50%;
     transform: translate(-50%);
     width: 95px;
