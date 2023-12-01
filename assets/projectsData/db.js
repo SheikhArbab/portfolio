@@ -1,5 +1,12 @@
 const projects = [
-
+    {
+        title: "Hoo Bank app",
+        description: "Hoo Bank app using react  html css js and more...",
+        category: "web app",
+        image: `https://drive.google.com/uc?id=1Sq293qhO4YxOqH7nk06qCvFPWoLitR29`,
+        link: "https://hoo-bank-r.netlify.app/",
+        categoryClass: "category-item all web app"
+    },
     {
         title: "S.A.J Holding Portfolio",
         description: "S.A.J Holding Portfolio that I made using HTML5 css3 and js.",
@@ -353,9 +360,10 @@ const projects = [
         link: "https://drive.google.com/uc?id=1ZkqtkhQ2B7Gh2cwaHHPcNv4fuePcOx05        ",
         categoryClass: "category-item all graphic"
     },
+
     {
         title: "Nike react app",
-        description: "Nike React app useing html css js react formik yup and more...",
+        description: "Nike React app using html css js react formik yup and more...",
         category: "web app",
         image: `https://drive.google.com/uc?id=16ZHpCKO-Q8nbYpXpX_wNpe8icIl8hgwS  `,
         link: "https://nikereactapp.netlify.app/",
