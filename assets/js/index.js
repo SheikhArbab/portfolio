@@ -86,7 +86,7 @@ ${testimonial
         .map(
             (_) => `        <div class="item slide">
     <div class="slider-box">
-    <figure> <img src=${_.image} alt=""></figure>
+    <figure> <img src=${_.image} alt="project" loading="lazy" ></figure>
     <h1>${_.user}</h1><p>${_.description}</p>
     <i class="fa-solid fa-quote-left"></i>
     <i class="fa-solid fa-quote-right"></i>
@@ -132,14 +132,13 @@ let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
     )
     .join(""))
 
-const projectData = () => {
-    console.log('fun call');
-    if (window.scrollY > 1000) {
-        document.querySelector(".work-list").innerHTML = projects
-            .map(
-                (_) => `
+
+const projectData = () => { 
+    document.querySelector(".work-list").innerHTML = projects
+        .map(
+            (_) => `
                         <div class="work menuIn  ${_.categoryClass}">
-                            <img src="${_.image}" alt="${_.title}">
+                            <img src="${_.image}" alt="${_.title}" loading="lazy" >
                             <div class="layer">
                                 <h3>${_.title}</h3>
                                 <p>${_.description}</p>
@@ -147,30 +146,27 @@ const projectData = () => {
                             </div>
                         </div>
                     `
-            )
-            .join("");
+        )
+        .join("");
 
-        let buttonGroup = document.querySelector(".button-group"),
-            filterButtons = buttonGroup.querySelectorAll(".filter-button"),
-            categoryItems = document.querySelectorAll(".category-item");
+    let buttonGroup = document.querySelector(".button-group"),
+        filterButtons = buttonGroup.querySelectorAll(".filter-button"),
+        categoryItems = document.querySelectorAll(".category-item");
 
-        filterButtons.forEach((_) => {
-            _.addEventListener("click", () => {
-                let $ = _.getAttribute("data-filter");
-                categoryItems.forEach((_) => {
-                    "all" === $ || _.classList.contains($) ? (_.style.display = "block") : (_.style.display = "none");
-                });
-                filterButtons.forEach((_) => _.classList.remove("active"));
-                _.classList.add("active");
+    filterButtons.forEach((_) => {
+        _.addEventListener("click", () => {
+            let $ = _.getAttribute("data-filter");
+            categoryItems.forEach((_) => {
+                "all" === $ || _.classList.contains($) ? (_.style.display = "block") : (_.style.display = "none");
             });
+            filterButtons.forEach((_) => _.classList.remove("active"));
+            _.classList.add("active");
         });
-
-        window.removeEventListener('scroll', projectData);
-    }
+    });
 }
 
-window.addEventListener('scroll', projectData);
 
+window.addEventListener('load', projectData)
 
 // form  
 document.addEventListener('DOMContentLoaded', function () {

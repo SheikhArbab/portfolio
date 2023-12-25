@@ -1,10 +1,10 @@
 const projects = [
     {
-        title: "Hoo Bank app",
-        description: "Hoo Bank app using react  html css js and more...",
+        title: "SIMS Dashboard",
+        description: "SIMS Dashboard app using react js, node js, express js, mongodb, formik, yup, and more...",
         category: "web app",
-        image: `https://drive.google.com/uc?id=1Sq293qhO4YxOqH7nk06qCvFPWoLitR29`,
-        link: "https://hoo-bank-r.netlify.app/",
+        image: `https://drive.google.com/uc?id=1u6OuduHEfm2oZ4fG_VIzW_z08O0zTSUr`,
+        link: " ",
         categoryClass: "category-item all web app"
     },
     {
@@ -12,8 +12,16 @@ const projects = [
         description: "S.A.J Holding Portfolio that I made using HTML5 css3 and js.",
         category: "website",
         image: "https://drive.google.com/uc?id=1EukCNQEelf8gqp8UVbEn1yswCq5ZCYFW ",
-        link: "https://sheikharbab.github.io/runningGame/",
+        link: "https://sajholding.netlify.app/",
         categoryClass: "category-item all website"
+    },
+    {
+        title: "Hoo Bank app",
+        description: "Hoo Bank app using react  html css js and more...",
+        category: "web app",
+        image: `https://drive.google.com/uc?id=1Sq293qhO4YxOqH7nk06qCvFPWoLitR29`,
+        link: "https://hoo-bank-r.netlify.app/",
+        categoryClass: "category-item all web app"
     },
     {
         title: "View  ",
