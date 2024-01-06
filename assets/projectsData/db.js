@@ -4,7 +4,7 @@ const projects = [
         description: "SIMS Dashboard app using react js, node js, express js, mongodb, formik, yup, and more...",
         category: "web app",
         image: `https://drive.google.com/uc?id=1u6OuduHEfm2oZ4fG_VIzW_z08O0zTSUr`,
-        link: " ",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7146196486383456256/",
         categoryClass: "category-item all web app"
     },
     {
