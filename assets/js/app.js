@@ -1,47 +1,73 @@
-import { testimonial, projects } from "./../projectsData/db.js";
+import {
+    testimonial,
+    projects
+} from "../projectsData/db.js";
 const totop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
     window.scrollY > 180 ? totop.classList.add("active") : totop.classList.remove("active");
 });
 const list = document.querySelectorAll(".list");
+
 function activeLink() {
     list.forEach((e) => e.classList.remove("active")), this.classList.add("active");
 }
 list.forEach((e) => e.addEventListener("click", activeLink));
-var typed = new Typed(".auto-type", { strings: ["Arbab Zafar", "MERN Developer", "Graphic Designer", "Student", "Freelancer"], typeSpeed: 12, backSpeed: 8, loop: !0 });
+var typed = new Typed(".auto-type", {
+    strings: ["Arbab Zafar", "MERN Developer", "Graphic Designer", "Student", "Freelancer"],
+    typeSpeed: 12,
+    backSpeed: 8,
+    loop: !0
+});
 const sections = document.querySelectorAll("section"),
     navLi = document.querySelectorAll("nav ul li");
 window.addEventListener("scroll", () => {
     let e = "";
     sections.forEach((t) => {
-        let s = t.offsetTop,
-            o = t.clientHeight;
-        scrollY >= s - o / 3 && (e = t.getAttribute("id"));
-    }),
+            let s = t.offsetTop,
+                o = t.clientHeight;
+            scrollY >= s - o / 3 && (e = t.getAttribute("id"));
+        }),
         navLi.forEach((t) => {
             t.classList.remove("active"), t.querySelector("a").getAttribute("href").substring(1) === e && t.classList.add("active");
         });
 });
 let backgroundImage = document.getElementById("home");
-window.addEventListener("scroll", function () {
-    let e = -window.scrollY / 2;
-    backgroundImage.style.backgroundPositionY = e + "px";
-}),
-    window.addEventListener("load", function () {
+window.addEventListener("scroll", function() {
+        let e = -window.scrollY / 2;
+        backgroundImage.style.backgroundPositionY = e + "px";
+    }),
+    window.addEventListener("load", function() {
         let e = document.querySelector("#preloader");
         let _ = document.querySelector("body");
         e.style.height = "0";
         _.style.overflow = 'auto'
     }),
     $(document).ready(() => {
-        $(".owl-carousel").owlCarousel({ loop: !0, margin: 10, autoplay: true, autoplayTimeout: 2000, nav: !0, responsive: { 0: { items: 1 }, 930: { items: 2 }, 1200: { items: 3 } } });
+        $(".owl-carousel").owlCarousel({
+            loop: !0,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: !0,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                930: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        });
     });
 
 
 document.querySelector(".toggle").addEventListener("click", () => {
-    let _ = document.querySelector(".navbar");
-    _.style.display = "block" === _.style.display ? "none" : "block";
-}),
+        let _ = document.querySelector(".navbar");
+        _.style.display = "block" === _.style.display ? "none" : "block";
+    }),
     document.querySelector("#moreBtn").addEventListener("click", () => {
         let _ = document.querySelector("#dots"),
             $ = document.querySelector("#more"),
@@ -52,6 +78,7 @@ let progText = document.querySelectorAll(".progText"),
     progress = document.querySelectorAll(".progress"),
     progContainer = document.querySelectorAll(".pg-container"),
     bol = !1;
+
 function animateCounter(_, $, t) {
     let i = ($ / t) * 10,
         a = 0;
@@ -61,7 +88,7 @@ function animateCounter(_, $, t) {
         (_.innerText = Math.floor(n) + "%"), a < t && setTimeout(o, 10);
     })();
 }
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function() {
     let _ = document.querySelector("#skills"),
         $ = _.getBoundingClientRect();
     if ($.top < window.innerHeight && !bol)
@@ -100,11 +127,11 @@ ${testimonial
 
 function generateSlug(text) {
     return text.toString().toLowerCase().trim()
-        .replace(/\s+/g, '-')           // Replace spaces with -
-        .replace(/[^\w\-]+/g, '')       // Remove non-word characters
-        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
-        .replace(/^-+/, '')             // Trim - from start of text
-        .replace(/-+$/, '');            // Trim - from end of text
+        .replace(/\s+/g, '-') // Replace spaces with -
+        .replace(/[^\w\-]+/g, '') // Remove non-word characters
+        .replace(/\-\-+/g, '-') // Replace multiple - with single -
+        .replace(/^-+/, '') // Trim - from start of text
+        .replace(/-+$/, ''); // Trim - from end of text
 }
 
 
@@ -133,7 +160,7 @@ let categories = [...new Set(projects.map((_) => _.category)), "all"].sort();
     .join(""))
 
 
-const projectData = () => { 
+const projectData = () => {
     document.querySelector(".work-list").innerHTML = projects
         .map(
             (_) => `
@@ -169,10 +196,10 @@ const projectData = () => {
 window.addEventListener('load', projectData)
 
 // form  
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('contact-form');
 
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', function(event) {
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var phone = document.getElementById('phone').value;
@@ -185,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Real-time validation for the email field
     var emailInput = document.getElementById('email');
-    emailInput.addEventListener('input', function () {
+    emailInput.addEventListener('input', function() {
         var email = emailInput.value;
         var emailError = document.getElementById('email-error');
 
